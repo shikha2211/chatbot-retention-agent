@@ -61,7 +61,7 @@ async def chat_with_agent(request: ChatRequest):
     """
     try:
         
-        print(f"Received new request for POST/api/chat message is : {request.message} , sessionID : {request.session_id}")
+        print(f"\n\n=>Received new request for POST/api/chat message is : {request.message} , sessionID : {request.session_id}, userId : {request.user_id}")
         
         
         if not ADK_AVAILABLE or not runner or not session_service or not types:
@@ -79,9 +79,11 @@ async def chat_with_agent(request: ChatRequest):
         app_name = "Retention_Agent"
 
         # Get or create session using ADK's session service
+        print(f"\n\n=>Get exissting session_service.get_session session_id: {session_id}, user_id: {user_id}, app_name: {app_name}");
         session = session_service.get_session(
             app_name=app_name, user_id=user_id, session_id=session_id
         )
+
         print(f"\n Check existing session : {'existing session present' if session else 'no existing session'}")
         
         if not session:
@@ -139,6 +141,8 @@ async def chat_with_agent(request: ChatRequest):
 @router.get("/chat/sessions/{session_id}", response_model=SessionInfo)
 async def get_session_info(session_id: str):
     """Get information about a specific session"""
+
+    print(f"\n==>Getting session using session_id: {session_id}")
     try:
         if not ADK_AVAILABLE or not session_service:
             raise HTTPException(status_code=503, detail="Session service not initialized")
@@ -149,7 +153,9 @@ async def get_session_info(session_id: str):
             session_id=session_id
         )
         if not session:
-            raise HTTPException(status_code=404, detail="Session not found")
+            print(f"\n==>GET SESS Session Not found for session_id: {session_id}")
+
+            raise HTTPException(status_code=404, detail="GET Session not found")
         
         return SessionInfo(
             session_id=session_id,
@@ -161,9 +167,15 @@ async def get_session_info(session_id: str):
         logging.error(f"Error getting session info: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to get session info: {str(e)}")
 
+
+
+
 @router.delete("/chat/sessions/{session_id}")
 async def delete_session(session_id: str):
     """Delete a specific session"""
+    
+    print(f"\n==>Delete session using session_id: {session_id}")
+
     try:
         if not ADK_AVAILABLE or not session_service:
             raise HTTPException(
@@ -174,35 +186,7 @@ async def delete_session(session_id: str):
             app_name="Retention_Agent", user_id="default-user", session_id=session_id
         )
         if not session:
-            raise HTTPException(status_code=404, detail="Session not found")
-
-        return SessionInfo(
-            session_id=session_id,
-            user_id=getattr(session, "user_id", "unknown"),
-            messages_count=len(getattr(session, "messages", [])),
-            created_at=getattr(session, "created_at", None),
-        )
-    except Exception as e:
-        logging.error(f"Error getting session info: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail=f"Failed to get session info: {str(e)}"
-        )
-
-
-@router.delete("/chat/sessions/{session_id}")
-async def delete_session(session_id: str):
-    """Delete a specific session"""
-    try:
-        if not ADK_AVAILABLE or not session_service:
-            raise HTTPException(
-                status_code=503, detail="Session service not initialized"
-            )
-
-        session = session_service.get_session(
-            app_name="Retention_Agent", user_id="default-user", session_id=session_id
-        )
-        if not session:
-            raise HTTPException(status_code=404, detail="Session not found")
+            raise HTTPException(status_code=404, detail="DELETE Session not found")
 
         session_service.delete_session(session_id)
         return {"message": f"Session {session_id} deleted successfully"}

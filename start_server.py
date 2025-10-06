@@ -20,13 +20,13 @@ def main():
     port = int(os.getenv("PORT", "9000"))  # Changed to 9000
     reload = os.getenv("RELOAD", "true").lower() == "true"
     
-    print(f"Starting Customer Retention Agent API server...")
-    print(f"Host: {host}")
-    print(f"Port: {port}")
-    print(f"Reload: {reload}")
-    print(f"API Documentation: http://{host}:{port}/docs")
-    print(f"Chat Endpoint: http://{host}:{port}/api/chat")
-    print(f"Health Check: http://{host}:{port}/api/chat/health")
+    print(f"\n==>Starting Customer Retention Agent API server...")
+    print(f"\n==>Host: {host}")
+    print(f"\n==>Port: {port}")
+    print(f"\n==>Reload: {reload}")
+    print(f"\n==>API Documentation: http://{host}:{port}/docs")
+    print(f"\n==>Chat Endpoint: http://{host}:{port}/api/chat")
+    print(f"\n==>Health Check: http://{host}:{port}/api/chat/health")
     
     # Start the server
     uvicorn.run(
