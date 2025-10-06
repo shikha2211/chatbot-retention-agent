@@ -1,0 +1,11 @@
+---
+helm:
+  imageUrl: "psregistry.pscloudhub.com/psinnersource_platform/engage_pro/chatbot-retention-agent"
+  helmChartLocation: ""
+  api: ""
+  containerPort: "80"
+  lprobe: "/api/auth/actuator/info"
+  rprobe: "/api/auth/actuator/info"
+  namespace: "psi"
+
+
