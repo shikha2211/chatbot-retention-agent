@@ -1,0 +1,116 @@
+body {
+    height: 95vh !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+
+}
+
+
+.head-section {
+    background-image: url('./assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(177, 49, 49, 0.25) !important;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ababab !important;
+    font-weight: 300 !important;
+
+    #ps {
+        margin-right: 10px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #agent {
+        margin-right: 10px;
+        color: #FE414D;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #agent-text {
+        padding-left: 10px;
+        border-left: 3px solid white;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+        font-size: 1.5rem;
+    }
+
+}
+
+.head-section h1 {
+    margin: 0 0 !important;
+    font-weight: 300 !important;
+    padding: 20px !important;
+}
+
+
+.mat-drawer-transition .mat-drawer-content,
+.mat-drawer.mat-drawer-opened.mat-drawer-opened,
+.mat-drawer-container .drawer-container .mat-drawer-transition,
+.chat-toolbar,
+body {
+    background-color: #eeeeee !important;
+    color: #000000 !important;
+}
+
+.chat-toolbar {
+    display: none !important;
+}
+
+.mat-mdc-card {
+    /*background-image: linear-gradient(90deg, #eeeeee, #000000);*/
+    background-color: white !important;
+    border: 1px solid #ababab !important;
+    margin-right: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+    color: black !important;
+}
+
+.input-field button {
+    background-color: #FE414D !important;
+    color: white !important;
+}
+
+.mat-mdc-mini-fab {
+    background-color: #FE414D !important;
+}
+
+.chat-card {
+    height: 80% !important;
+}
+
+mat-card .mat-mdc-card .mdc-card .message-card,
+.user-message .message-card *,
+mat-card .mat-mdc-card .mdc-card .message-card,
+.bot-message .message-card *,
+.input-field input {
+    color: #000000 !important;
+}
+
+.bot-message .message-card,
+.user-message .message-card {
+    background-color: #eeeeee !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+}
+
+.mat-mdc-mini-fab mat-icon {
+    color: white !important
+}
+
+.input-field .mat-mdc-text-field-wrapper {
+    border: 1px solid #ababab !important;
+    background-color: white !important;
+    color: #000000 !important;
+}
+
+input#mat-input-1 {
+    caret-color: #000000 !important;
+}
