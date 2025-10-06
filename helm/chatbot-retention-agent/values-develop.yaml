@@ -39,8 +39,8 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
-  targetport: 80
+  port: 8080
+  targetport: 9000
 
 ingress:
   enabled: true
@@ -58,16 +58,16 @@ ingress:
 
 
   hosts:
-    - host: chat-interface.stg.pscloudhub.com
+    - host: retention-agent.stg.pscloudhub.com
       paths:
       - path: /
         backend:
           serviceName: chatbot-retention-agent
-          servicePort: 80
+          servicePort: 8080
   tls:
     - secretName: psi-tls
       hosts:
-        - chat-interface.stg.pscloudhub.com
+        - retention-agent.stg.pscloudhub.com
 
 resources:
   limits:

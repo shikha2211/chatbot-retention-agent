@@ -77,6 +77,8 @@ pipeline {
                           items:
                             - key: .dockerconfigjson
                               path: config.json
+                  imagePullSecrets:
+                  - name: psregistry-creds
                   containers:
                   - name: docker
                     image: docker
