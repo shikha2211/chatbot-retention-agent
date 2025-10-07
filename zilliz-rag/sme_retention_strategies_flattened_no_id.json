@@ -1,0 +1,5302 @@
+[
+  {
+    "retentionStrategyId": "RS_000",
+    "strategyName": "Offer 0% discount on Lending for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 56.1,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.84
+  },
+  {
+    "retentionStrategyId": "RS_000",
+    "strategyName": "Offer 0% discount on Lending for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 56.1,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Lending",
+      "Overdraft",
+      "Credit Card",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Pricing",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.88
+  },
+  {
+    "retentionStrategyId": "RS_001",
+    "strategyName": "Propose 1% discount on Deposits for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 74.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending",
+      "Credit Card",
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Pricing",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.74
+  },
+  {
+    "retentionStrategyId": "RS_001",
+    "strategyName": "Propose 1% discount on Deposits for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 74.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.85
+  },
+  {
+    "retentionStrategyId": "RS_002",
+    "strategyName": "Provide 0% discount on Current Account for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 54.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.86
+  },
+  {
+    "retentionStrategyId": "RS_002",
+    "strategyName": "Provide 0% discount on Current Account for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 54.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.66
+  },
+  {
+    "retentionStrategyId": "RS_003",
+    "strategyName": "Provide 0% discount on Current Account for Micro customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 89.5,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending",
+      "Current Account",
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Service Quality",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.94
+  },
+  {
+    "retentionStrategyId": "RS_003",
+    "strategyName": "Provide 0% discount on Current Account for Micro customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 89.5,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.8
+  },
+  {
+    "retentionStrategyId": "RS_004",
+    "strategyName": "Provide 0% discount on Credit Card for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 81.2,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Lending"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.51
+  },
+  {
+    "retentionStrategyId": "RS_004",
+    "strategyName": "Provide 0% discount on Credit Card for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 81.2,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.81
+  },
+  {
+    "retentionStrategyId": "RS_005",
+    "strategyName": "Offer 2% discount on Current Account for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 70.0,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Service Quality",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.79
+  },
+  {
+    "retentionStrategyId": "RS_005",
+    "strategyName": "Offer 2% discount on Current Account for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 70.0,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Lending"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.77
+  },
+  {
+    "retentionStrategyId": "RS_006",
+    "strategyName": "Offer 1% discount on Overdraft for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 51.5,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.48
+  },
+  {
+    "retentionStrategyId": "RS_006",
+    "strategyName": "Offer 1% discount on Overdraft for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 51.5,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.47
+  },
+  {
+    "retentionStrategyId": "RS_007",
+    "strategyName": "Provide 0% discount on Deposits for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 52.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.78
+  },
+  {
+    "retentionStrategyId": "RS_007",
+    "strategyName": "Provide 0% discount on Deposits for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 52.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Credit Card",
+      "Current Account",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.72
+  },
+  {
+    "retentionStrategyId": "RS_007",
+    "strategyName": "Provide 0% discount on Deposits for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 52.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Deposits",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.58
+  },
+  {
+    "retentionStrategyId": "RS_008",
+    "strategyName": "Offer 1% discount on Deposits for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Lending",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 50.5,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Current Account",
+      "Deposits",
+      "Lending"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.87
+  },
+  {
+    "retentionStrategyId": "RS_008",
+    "strategyName": "Offer 1% discount on Deposits for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Lending",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 50.5,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Deposits",
+      "Lending"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_009",
+    "strategyName": "Propose 2% discount on Lending for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 53.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Deposits",
+      "Lending"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.53
+  },
+  {
+    "retentionStrategyId": "RS_009",
+    "strategyName": "Propose 2% discount on Lending for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 53.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_010",
+    "strategyName": "Propose 2% discount on Lending for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.91
+  },
+  {
+    "retentionStrategyId": "RS_010",
+    "strategyName": "Propose 2% discount on Lending for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending",
+      "Credit Card",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Service Quality",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.55
+  },
+  {
+    "retentionStrategyId": "RS_011",
+    "strategyName": "Propose 0% discount on Credit Card for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 67.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits",
+      "Overdraft",
+      "Lending",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Product Features",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.68
+  },
+  {
+    "retentionStrategyId": "RS_011",
+    "strategyName": "Propose 0% discount on Credit Card for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 67.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.5
+  },
+  {
+    "retentionStrategyId": "RS_011",
+    "strategyName": "Propose 0% discount on Credit Card for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 67.8,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.79
+  },
+  {
+    "retentionStrategyId": "RS_012",
+    "strategyName": "Propose 2% discount on Deposits for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 72.7,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Credit Card",
+      "Lending"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.46
+  },
+  {
+    "retentionStrategyId": "RS_012",
+    "strategyName": "Propose 2% discount on Deposits for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 72.7,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Credit Card",
+      "Overdraft",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.65
+  },
+  {
+    "retentionStrategyId": "RS_013",
+    "strategyName": "Propose 0% discount on Lending for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 89.7,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Lending",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.76
+  },
+  {
+    "retentionStrategyId": "RS_013",
+    "strategyName": "Propose 0% discount on Lending for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 89.7,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Small",
+    "productsHeld": [
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.64
+  },
+  {
+    "retentionStrategyId": "RS_013",
+    "strategyName": "Propose 0% discount on Lending for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 89.7,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.95
+  },
+  {
+    "retentionStrategyId": "RS_014",
+    "strategyName": "Provide 2% discount on Credit Card for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 80.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending",
+      "Deposits",
+      "Current Account",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.42
+  },
+  {
+    "retentionStrategyId": "RS_014",
+    "strategyName": "Provide 2% discount on Credit Card for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 80.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.43
+  },
+  {
+    "retentionStrategyId": "RS_015",
+    "strategyName": "Propose 2% discount on Credit Card for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 68.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending",
+      "Overdraft",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.56
+  },
+  {
+    "retentionStrategyId": "RS_015",
+    "strategyName": "Propose 2% discount on Credit Card for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 68.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.42
+  },
+  {
+    "retentionStrategyId": "RS_015",
+    "strategyName": "Propose 2% discount on Credit Card for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 68.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.64
+  },
+  {
+    "retentionStrategyId": "RS_016",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 86.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.55
+  },
+  {
+    "retentionStrategyId": "RS_016",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 86.3,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Overdraft",
+      "Lending"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.58
+  },
+  {
+    "retentionStrategyId": "RS_017",
+    "strategyName": "Propose 0% discount on Credit Card for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 52.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.72
+  },
+  {
+    "retentionStrategyId": "RS_017",
+    "strategyName": "Propose 0% discount on Credit Card for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 52.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.91
+  },
+  {
+    "retentionStrategyId": "RS_017",
+    "strategyName": "Propose 0% discount on Credit Card for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 52.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Credit Card",
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.4
+  },
+  {
+    "retentionStrategyId": "RS_018",
+    "strategyName": "Provide 2% discount on Credit Card for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 91.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.85
+  },
+  {
+    "retentionStrategyId": "RS_018",
+    "strategyName": "Provide 2% discount on Credit Card for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 91.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.48
+  },
+  {
+    "retentionStrategyId": "RS_018",
+    "strategyName": "Provide 2% discount on Credit Card for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 91.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending",
+      "Credit Card",
+      "Deposits",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_019",
+    "strategyName": "Offer 2% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 56.0,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.69
+  },
+  {
+    "retentionStrategyId": "RS_019",
+    "strategyName": "Offer 2% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 56.0,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft",
+      "Current Account",
+      "Lending"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Experience",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.82
+  },
+  {
+    "retentionStrategyId": "RS_020",
+    "strategyName": "Provide 2% discount on Overdraft for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Deposits",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 67.5,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.66
+  },
+  {
+    "retentionStrategyId": "RS_020",
+    "strategyName": "Provide 2% discount on Overdraft for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Deposits",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 67.5,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Lending",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.42
+  },
+  {
+    "retentionStrategyId": "RS_020",
+    "strategyName": "Provide 2% discount on Overdraft for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Deposits",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 67.5,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.72
+  },
+  {
+    "retentionStrategyId": "RS_021",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Deposits",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 88.2,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.72
+  },
+  {
+    "retentionStrategyId": "RS_021",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Deposits",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 88.2,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.63
+  },
+  {
+    "retentionStrategyId": "RS_021",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Deposits",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 88.2,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.53
+  },
+  {
+    "retentionStrategyId": "RS_022",
+    "strategyName": "Provide 2% discount on Overdraft for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 71.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.4
+  },
+  {
+    "retentionStrategyId": "RS_022",
+    "strategyName": "Provide 2% discount on Overdraft for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 71.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Deposits",
+      "Current Account",
+      "Lending"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.53
+  },
+  {
+    "retentionStrategyId": "RS_022",
+    "strategyName": "Provide 2% discount on Overdraft for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 71.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.62
+  },
+  {
+    "retentionStrategyId": "RS_023",
+    "strategyName": "Provide 2% discount on Lending for Small customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 86.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.87
+  },
+  {
+    "retentionStrategyId": "RS_023",
+    "strategyName": "Provide 2% discount on Lending for Small customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 86.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.87
+  },
+  {
+    "retentionStrategyId": "RS_023",
+    "strategyName": "Provide 2% discount on Lending for Small customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 86.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Lending",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.52
+  },
+  {
+    "retentionStrategyId": "RS_024",
+    "strategyName": "Offer 1% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.8,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Current Account",
+      "Overdraft",
+      "Lending"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.59
+  },
+  {
+    "retentionStrategyId": "RS_024",
+    "strategyName": "Offer 1% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.8,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.58
+  },
+  {
+    "retentionStrategyId": "RS_024",
+    "strategyName": "Offer 1% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.8,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Credit Card",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.82
+  },
+  {
+    "retentionStrategyId": "RS_025",
+    "strategyName": "Offer 2% discount on Deposits for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 53.9,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.78
+  },
+  {
+    "retentionStrategyId": "RS_025",
+    "strategyName": "Offer 2% discount on Deposits for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 53.9,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Lending"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.77
+  },
+  {
+    "retentionStrategyId": "RS_025",
+    "strategyName": "Offer 2% discount on Deposits for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 53.9,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.75
+  },
+  {
+    "retentionStrategyId": "RS_026",
+    "strategyName": "Provide 0% discount on Deposits for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 68.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.45
+  },
+  {
+    "retentionStrategyId": "RS_026",
+    "strategyName": "Provide 0% discount on Deposits for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing",
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 68.9,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.87
+  },
+  {
+    "retentionStrategyId": "RS_027",
+    "strategyName": "Provide 1% discount on Lending for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 56.2,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.66
+  },
+  {
+    "retentionStrategyId": "RS_027",
+    "strategyName": "Provide 1% discount on Lending for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 56.2,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.92
+  },
+  {
+    "retentionStrategyId": "RS_028",
+    "strategyName": "Provide 1% discount on Overdraft for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 83.2,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Lending",
+      "Deposits",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.67
+  },
+  {
+    "retentionStrategyId": "RS_028",
+    "strategyName": "Provide 1% discount on Overdraft for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 83.2,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Credit Card",
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.8
+  },
+  {
+    "retentionStrategyId": "RS_028",
+    "strategyName": "Provide 1% discount on Overdraft for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 83.2,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Credit Card",
+      "Current Account",
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.7
+  },
+  {
+    "retentionStrategyId": "RS_029",
+    "strategyName": "Offer 1% discount on Credit Card for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 74.6,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.73
+  },
+  {
+    "retentionStrategyId": "RS_029",
+    "strategyName": "Offer 1% discount on Credit Card for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 74.6,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.49
+  },
+  {
+    "retentionStrategyId": "RS_029",
+    "strategyName": "Offer 1% discount on Credit Card for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account",
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 74.6,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.8
+  },
+  {
+    "retentionStrategyId": "RS_030",
+    "strategyName": "Provide 1% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 81.4,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.5
+  },
+  {
+    "retentionStrategyId": "RS_030",
+    "strategyName": "Provide 1% discount on Deposits for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 81.4,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.42
+  },
+  {
+    "retentionStrategyId": "RS_031",
+    "strategyName": "Offer 2% discount on Lending for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Deposits",
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.43
+  },
+  {
+    "retentionStrategyId": "RS_031",
+    "strategyName": "Offer 2% discount on Lending for Small customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Overdraft",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Credit Card",
+      "Lending",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.88
+  },
+  {
+    "retentionStrategyId": "RS_032",
+    "strategyName": "Offer 1% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Lending",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 69.1,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.82
+  },
+  {
+    "retentionStrategyId": "RS_032",
+    "strategyName": "Offer 1% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Lending",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 69.1,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.43
+  },
+  {
+    "retentionStrategyId": "RS_032",
+    "strategyName": "Offer 1% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Lending",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality",
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 69.1,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits",
+      "Lending"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.53
+  },
+  {
+    "retentionStrategyId": "RS_033",
+    "strategyName": "Provide 1% discount on Deposits for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 61.5,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.78
+  },
+  {
+    "retentionStrategyId": "RS_033",
+    "strategyName": "Provide 1% discount on Deposits for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 61.5,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.69
+  },
+  {
+    "retentionStrategyId": "RS_033",
+    "strategyName": "Provide 1% discount on Deposits for Medium customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending",
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 61.5,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Credit Card",
+      "Lending"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Pricing",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.83
+  },
+  {
+    "retentionStrategyId": "RS_034",
+    "strategyName": "Offer 0% discount on Current Account for Micro customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 52.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_034",
+    "strategyName": "Offer 0% discount on Current Account for Micro customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 52.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.72
+  },
+  {
+    "retentionStrategyId": "RS_035",
+    "strategyName": "Propose 0% discount on Lending for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 79.3,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.77
+  },
+  {
+    "retentionStrategyId": "RS_035",
+    "strategyName": "Propose 0% discount on Lending for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Current Account",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 79.3,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Experience",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.54
+  },
+  {
+    "retentionStrategyId": "RS_036",
+    "strategyName": "Provide 0% discount on Deposits for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 94.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.88
+  },
+  {
+    "retentionStrategyId": "RS_036",
+    "strategyName": "Provide 0% discount on Deposits for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 94.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Overdraft",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_036",
+    "strategyName": "Provide 0% discount on Deposits for Micro customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 6,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 94.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Pricing",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.83
+  },
+  {
+    "retentionStrategyId": "RS_037",
+    "strategyName": "Propose 0% discount on Deposits for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 91.2,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.51
+  },
+  {
+    "retentionStrategyId": "RS_037",
+    "strategyName": "Propose 0% discount on Deposits for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Current Account"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 1,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 91.2,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Overdraft",
+      "Deposits",
+      "Lending"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.63
+  },
+  {
+    "retentionStrategyId": "RS_038",
+    "strategyName": "Offer 2% discount on Lending for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 95.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.59
+  },
+  {
+    "retentionStrategyId": "RS_038",
+    "strategyName": "Offer 2% discount on Lending for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 95.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.75
+  },
+  {
+    "retentionStrategyId": "RS_038",
+    "strategyName": "Offer 2% discount on Lending for Medium customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "App Push",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 95.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Credit Card",
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.89
+  },
+  {
+    "retentionStrategyId": "RS_039",
+    "strategyName": "Provide 0% discount on Overdraft for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 58.7,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Current Account",
+      "Credit Card",
+      "Deposits",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.74
+  },
+  {
+    "retentionStrategyId": "RS_039",
+    "strategyName": "Provide 0% discount on Overdraft for Small customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 8,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 58.7,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Product Features",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 5,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.55
+  },
+  {
+    "retentionStrategyId": "RS_040",
+    "strategyName": "Propose 1% discount on Credit Card for Medium customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Lending",
+      "Current Account",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 51.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft",
+      "Credit Card",
+      "Current Account",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.85
+  },
+  {
+    "retentionStrategyId": "RS_040",
+    "strategyName": "Propose 1% discount on Credit Card for Medium customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Lending",
+      "Current Account",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience",
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Upward",
+    "openBankingCashFlowVolatilityMax": 10,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 51.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Lending",
+      "Credit Card",
+      "Deposits",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Service Quality",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.75
+  },
+  {
+    "retentionStrategyId": "RS_041",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Current Account",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 73.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Lending",
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.9
+  },
+  {
+    "retentionStrategyId": "RS_041",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Current Account",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 73.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.6
+  },
+  {
+    "retentionStrategyId": "RS_041",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Current Account",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 5,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Video Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 73.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "High",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Lending"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.87
+  },
+  {
+    "retentionStrategyId": "RS_042",
+    "strategyName": "Propose 2% discount on Deposits for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 77.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Lending",
+      "Overdraft",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.77
+  },
+  {
+    "retentionStrategyId": "RS_042",
+    "strategyName": "Propose 2% discount on Deposits for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 77.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Current Account",
+      "Overdraft",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 5,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 6,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.46
+  },
+  {
+    "retentionStrategyId": "RS_042",
+    "strategyName": "Propose 2% discount on Deposits for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Credit Card",
+      "Deposits"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Healthcare clients.",
+    "estimatedSuccessRate (%)": 77.9,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Product Features",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.45
+  },
+  {
+    "retentionStrategyId": "RS_043",
+    "strategyName": "Propose 1% discount on Overdraft for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.5
+  },
+  {
+    "retentionStrategyId": "RS_043",
+    "strategyName": "Propose 1% discount on Overdraft for Small customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 6,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 57.1,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.68
+  },
+  {
+    "retentionStrategyId": "RS_044",
+    "strategyName": "Propose 2% discount on Overdraft for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 81.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.66
+  },
+  {
+    "retentionStrategyId": "RS_044",
+    "strategyName": "Propose 2% discount on Overdraft for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 81.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Credit Card",
+      "Lending"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.76
+  },
+  {
+    "retentionStrategyId": "RS_044",
+    "strategyName": "Propose 2% discount on Overdraft for Medium customers",
+    "offerType": "Pricing",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Credit Card"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 2,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 7,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Digital Portal",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 81.6,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "Low",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Small",
+    "productsHeld": [
+      "Lending",
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.41
+  },
+  {
+    "retentionStrategyId": "RS_045",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 79.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 10,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Experience",
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.57
+  },
+  {
+    "retentionStrategyId": "RS_045",
+    "strategyName": "Propose 2% discount on Current Account for Medium customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Small",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Experience",
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Retail clients.",
+    "estimatedSuccessRate (%)": 79.4,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "High",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Lending",
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 9,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.91
+  },
+  {
+    "retentionStrategyId": "RS_046",
+    "strategyName": "Offer 0% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 87.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Small",
+    "productsHeld": [
+      "Deposits",
+      "Overdraft",
+      "Lending",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 3,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Pricing",
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.63
+  },
+  {
+    "retentionStrategyId": "RS_046",
+    "strategyName": "Offer 0% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 87.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Credit Card",
+      "Lending"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Pricing",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 2,
+    "competitorAttractivenessScore": 10,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.42
+  },
+  {
+    "retentionStrategyId": "RS_046",
+    "strategyName": "Offer 0% discount on Credit Card for Micro customers",
+    "offerType": "Incentive",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Speed/Convenience"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 1,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 8,
+    "competitorAttractivenessMinScore": 10,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Professional Services clients.",
+    "estimatedSuccessRate (%)": 87.0,
+    "estimatedCostToBank": "Low",
+    "personalizationLevel": "Medium",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Technology",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Credit Card",
+      "Lending",
+      "Overdraft",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 4,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.61
+  },
+  {
+    "retentionStrategyId": "RS_047",
+    "strategyName": "Offer 1% discount on Overdraft for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 91.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 9,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Cash Flow Stress"
+    ],
+    "openBankingRevenueTrend": "Stable",
+    "openBankingCashFlowVolatilityScore": 4,
+    "competitorAttractivenessScore": 1,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.49
+  },
+  {
+    "retentionStrategyId": "RS_047",
+    "strategyName": "Offer 1% discount on Overdraft for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 91.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 1,
+    "churnReasonTags": [
+      "Product Features",
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 7,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.7
+  },
+  {
+    "retentionStrategyId": "RS_047",
+    "strategyName": "Offer 1% discount on Overdraft for Small customers",
+    "offerType": "Feature Enhancement",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Lending"
+    ],
+    "applicableChurnReasonTags": [
+      "Service Quality"
+    ],
+    "minimumDigitalEngagementScore": 3,
+    "minimumSatisfactionScore": 2,
+    "openBankingRevenueTrendCondition": "Stable",
+    "openBankingCashFlowVolatilityMax": 9,
+    "competitorAttractivenessMinScore": 9,
+    "channelOfDelivery": "RM Call",
+    "offerDetails": "Fee waiver offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 91.0,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "High",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Small",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits"
+    ],
+    "digitalEngagementScore": 8,
+    "satisfactionScore": 2,
+    "churnReasonTags": [
+      "Service Quality"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 1,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.86
+  },
+  {
+    "retentionStrategyId": "RS_048",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.4,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Retail",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Lending",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Pricing"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 8,
+    "competitorAttractivenessScore": 6,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.94
+  },
+  {
+    "retentionStrategyId": "RS_048",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.4,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Manufacturing",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Current Account",
+      "Deposits",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 9,
+    "competitorAttractivenessScore": 2,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.53
+  },
+  {
+    "retentionStrategyId": "RS_048",
+    "strategyName": "Offer 2% discount on Current Account for Micro customers",
+    "offerType": "Service Fix",
+    "applicableCustomerSegment": "Medium",
+    "applicableProducts": [
+      "Deposits",
+      "Credit Card",
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Pricing"
+    ],
+    "minimumDigitalEngagementScore": 5,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "SMS",
+    "offerDetails": "Reduced rates offered under loyalty scheme for eligible Technology clients.",
+    "estimatedSuccessRate (%)": 90.4,
+    "estimatedCostToBank": "High",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Micro",
+    "productsHeld": [
+      "Overdraft",
+      "Lending",
+      "Deposits",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 1,
+    "satisfactionScore": 4,
+    "churnReasonTags": [
+      "Speed/Convenience",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 3,
+    "competitorAttractivenessScore": 8,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.76
+  },
+  {
+    "retentionStrategyId": "RS_049",
+    "strategyName": "Provide 0% discount on Current Account for Micro customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 82.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Small",
+    "productsHeld": [
+      "Credit Card",
+      "Deposits",
+      "Overdraft",
+      "Current Account"
+    ],
+    "digitalEngagementScore": 2,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Pricing",
+      "Product Features"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 5,
+    "outcome": "Retention Successful",
+    "retentionScore": 0.66
+  },
+  {
+    "retentionStrategyId": "RS_049",
+    "strategyName": "Provide 0% discount on Current Account for Micro customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 82.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Healthcare",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft"
+    ],
+    "digitalEngagementScore": 6,
+    "satisfactionScore": 5,
+    "churnReasonTags": [
+      "Cash Flow Stress",
+      "Speed/Convenience"
+    ],
+    "openBankingRevenueTrend": "Declining",
+    "openBankingCashFlowVolatilityScore": 10,
+    "competitorAttractivenessScore": 3,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.62
+  },
+  {
+    "retentionStrategyId": "RS_049",
+    "strategyName": "Provide 0% discount on Current Account for Micro customers",
+    "offerType": "Digital Engagement",
+    "applicableCustomerSegment": "Micro",
+    "applicableProducts": [
+      "Overdraft"
+    ],
+    "applicableChurnReasonTags": [
+      "Product Features"
+    ],
+    "minimumDigitalEngagementScore": 4,
+    "minimumSatisfactionScore": 3,
+    "openBankingRevenueTrendCondition": "Declining",
+    "openBankingCashFlowVolatilityMax": 4,
+    "competitorAttractivenessMinScore": 7,
+    "channelOfDelivery": "Email",
+    "offerDetails": "Bonus rewards offered under loyalty scheme for eligible Manufacturing clients.",
+    "estimatedSuccessRate (%)": 82.4,
+    "estimatedCostToBank": "Medium",
+    "personalizationLevel": "Low",
+    "timeSensitivity": "Medium",
+    "remarks": "Effective mainly for price-sensitive and digitally engaged clients.",
+    "industrySector": "Professional Services",
+    "companySize": "Medium",
+    "productsHeld": [
+      "Overdraft",
+      "Current Account",
+      "Lending",
+      "Credit Card"
+    ],
+    "digitalEngagementScore": 7,
+    "satisfactionScore": 3,
+    "churnReasonTags": [
+      "Pricing",
+      "Experience"
+    ],
+    "openBankingRevenueTrend": "Upward",
+    "openBankingCashFlowVolatilityScore": 7,
+    "competitorAttractivenessScore": 4,
+    "outcome": "Retention Failed",
+    "retentionScore": 0.69
+  }
+]

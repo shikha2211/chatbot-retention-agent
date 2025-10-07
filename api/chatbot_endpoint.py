@@ -114,7 +114,7 @@ async def chat_with_agent(request: ChatRequest):
         # Extract the response from the events
         response_text = ""
         for event in response_events:
-            print(f'\n ===> response event from agent {event}')
+            # print(f'\n ===> response event from agent {event}')
             if hasattr(event, "content") and hasattr(event.content, "parts"):
                 for part in event.content.parts:
                     if hasattr(part, "text") and isinstance(part.text, str) :

@@ -7,3 +7,4 @@ instructor
 openai
 litellm
 pymongo
+pymilvus
