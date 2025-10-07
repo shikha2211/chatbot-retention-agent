@@ -80,7 +80,7 @@ async def chat_with_agent(request: ChatRequest):
 
         # Get or create session using ADK's session service
         print(f"\n\n=>Get exissting session_service.get_session session_id: {session_id}, user_id: {user_id}, app_name: {app_name}");
-        session = session_service.get_session(
+        session = await session_service.get_session(
             app_name=app_name, user_id=user_id, session_id=session_id
         )
 
@@ -88,7 +88,7 @@ async def chat_with_agent(request: ChatRequest):
         
         if not session:
             print(f"\n No existing session creating new")
-            session = session_service.create_session(
+            session = await session_service.create_session(
                 app_name=app_name, user_id=user_id, session_id=session_id
             )
 
@@ -182,13 +182,13 @@ async def delete_session(session_id: str):
                 status_code=503, detail="Session service not initialized"
             )
 
-        session = session_service.get_session(
+        session = await session_service.get_session(
             app_name="Retention_Agent", user_id="default-user", session_id=session_id
         )
         if not session:
             raise HTTPException(status_code=404, detail="DELETE Session not found")
 
-        session_service.delete_session(session_id)
+        await session_service.delete_session(session_id)
         return {"message": f"Session {session_id} deleted successfully"}
     except Exception as e:
         logging.error(f"Error deleting session: {str(e)}")
@@ -220,7 +220,7 @@ async def health_check():
             }
 
         # Test if the agent runner is working
-        test_session = session_service.create_session(
+        test_session = await session_service.create_session(
             app_name="Retention_Agent",
             user_id="health-check",
             session_id="health-check-session",
