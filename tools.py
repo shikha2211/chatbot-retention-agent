@@ -6,6 +6,7 @@ from dotenv import load_dotenv  # Import load_dotenv
 from typing import Any, Dict
 from google.adk.tools import google_search
 from models import  CustomerProfile
+from services.query_zilliz_milvus_service import query_zilliz_milvus_service
 
 load_dotenv()  # Load environment variables
 
@@ -15,7 +16,7 @@ RAG_API_URL = os.getenv('RAG_API_URL')
 print(f'CUSTOMER_API_UR {CUSTOMER_API_URL}')
 print(f'RAG_API_URL {RAG_API_URL}')
 
-def CustomerDataTool(customer_id: str) -> Dict[str, Any]:
+async def CustomerDataTool(customer_id: str) -> Dict[str, Any]:
         """Fetches customer details"""
         try:
                 print(f'\n\n===>inside CustomerDataTool customerId is: {customer_id}')
@@ -35,7 +36,7 @@ def CustomerDataTool(customer_id: str) -> Dict[str, Any]:
                 return {}
 
 
-def StrategyRetrievalToolBackup(customerData: CustomerProfile) -> dict:
+async def StrategyRetrievalToolBackup(customerData: CustomerProfile) -> dict:
         """Retrieves RAG-based strategies"""
         try:
                 print(f'\n\n===>inside StrategyRetrievalTool context is: {customerData}')
@@ -48,33 +49,14 @@ def StrategyRetrievalToolBackup(customerData: CustomerProfile) -> dict:
                 return None
 
 
-def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
+async def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
         """Retrieves RAG-based strategies"""
         try:
-                print(f'\n\n===>inside StrategyRetrievalTool context is: {customerData}')
-                # Determine endpoint: prefer env var, else default to local FastAPI with /api prefix
-                url = "http://localhost:9000/api/fetch-retention-strategies"
-
-                # Ensure JSON-serializable payload
-                payload = customerData
-                try:
-                        # Pydantic v2
-                        if hasattr(customerData, 'model_dump'):
-                                payload = customerData.model_dump()
-                        # Pydantic v1
-                        elif hasattr(customerData, 'dict'):
-                                payload = customerData.dict()
-                        # Dataclass
-                        elif hasattr(customerData, '__dict__') and not isinstance(customerData, dict):
-                                payload = dict(customerData.__dict__)
-                except Exception:
-                        pass
-
-                response = requests.post(url, json=payload, timeout=15)
-                response.raise_for_status()
-                print("\n\n===>StrategyRetrievalTool:Status Code:", response.status_code)
-                print("\n\n===>StrategyRetrievalTool:Response JSON:", response.json())
-                return response.json()
-        except requests.exceptions.RequestException as e:
-                print(f"\n\n===>ERROR : Error while RAG call for strategies : {e}")
-                return None
+                print(f'\n\n===>inside new StrategyRetrievalTool context is: {customerData}')
+                results = query_zilliz_milvus_service(customerData)
+                return results
+        
+        except Exception as e:
+                print(f"\n\n===>ERROR: Error while RAG call for strategies: {str(e)}")
+                # Return a fallback response instead of None
+                return {"error": f"Service unavailable: {str(e)}", "strategies": []}

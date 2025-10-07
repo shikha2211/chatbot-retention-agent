@@ -3,23 +3,13 @@ import json
 import os
 import random
 from typing import List
+
 from pymilvus import MilvusClient
 
 
 def load_config():
-    # Prefer environment variables if present
-    uri = os.getenv('MILVUS_URI')
-    token = os.getenv('MILVUS_TOKEN')
-    if uri and token:
-        return uri, token
-
-    # Fall back to api/config.ini relative to this package root
-    service_dir = os.path.dirname(__file__)
-    root_dir = os.path.dirname(service_dir)
-    cfg_path = os.path.join(root_dir, 'services', 'config.ini')
-
     cfp = configparser.RawConfigParser()
-    cfp.read(cfg_path)
+    cfp.read('config.ini')
     uri = cfp.get('example', 'uri')
     token = cfp.get('example', 'token')
     return uri, token
@@ -40,14 +30,19 @@ def build_customer_embedding(customer: dict, dim: int = 64) -> List[float]:
     return [random.random() for _ in range(dim)]
 
 
-
-def query_zilliz_milvus_service(customer: dict):
+def main():
     uri, token = load_config()
     collection_name = "customer_retention_strategies"
     anns_field = "embedding"
     dim = 64
 
     client = MilvusClient(uri=uri, token=token)
+
+    customer_path = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        'agents-adk', 'retention-agent', 'customer_response.json',
+    )
+    customer = load_customer_record(customer_path)
 
     query_vector = build_customer_embedding(customer, dim=dim)
 
@@ -79,36 +74,9 @@ def query_zilliz_milvus_service(customer: dict):
         if isinstance(detail, str):
             print(f"   details: {detail[:120]}{'...' if len(detail) > 120 else ''}")
         print()
-    
-    
-    # return results
-    
-    if not results:
-        raise HTTPException(status_code=404, detail="No strategies found for this customer details.")
-    serialized = []
-    for hit in hits:
-        entity = hit.get('entity', {}) or {}
-        
-        print(f"\n inside hits loop : entity is : ${entity}")
-
-        serialized.append({
-            "retentionStrategyId": entity.get("retentionStrategyId"),
-            "strategyName": entity.get("strategyName"),
-            "offerType": entity.get("offerType"),
-            "applicableCustomerSegment": entity.get("applicableCustomerSegment"),
-            "estimatedSuccessRate": entity.get("estimatedSuccessRate"),
-            "retentionScore": entity.get("retentionScore"),
-            "channelOfDelivery": entity.get("channelOfDelivery"),
-            "industrySector": entity.get("industrySector"),
-            "companySize": entity.get("companySize"),
-            "distance": hit.get("distance"),
-        })
-
-    print(f"\n returning results now : serialized is : ${serialized}")
-
-    return {"results": serialized}
 
 
-
+if __name__ == "__main__":
+    main()
 
 
