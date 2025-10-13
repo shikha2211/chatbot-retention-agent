@@ -167,7 +167,14 @@ pipeline {
 
 
         stage('kaniko: Build n Publish') {
-          steps {
+           steps {
+             withCredentials([
+            string(credentialsId: 'OPENAI_API_KEY', variable: 'OPENAI_API_KEY'),
+            string(credentialsId: 'GOOGLE_API_KEY', variable: 'GOOGLE_API_KEY'),
+            string(credentialsId: 'CUSTOMER_API_URL', variable: 'CUSTOMER_API_URL'),
+            string(credentialsId: 'PORTFOLIO_API_URL', variable: 'PORTFOLIO_API_URL'),
+            string(credentialsId: 'MONGO_URI', variable: 'MONGO_URI')
+        ]) {
             container('kaniko') {
               echo "Deploying api ...."
                 script {
@@ -180,6 +187,7 @@ pipeline {
                 } //container
            }
           }
+        }
         }
 
        
