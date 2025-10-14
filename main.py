@@ -21,3 +21,7 @@ app.include_router(portfolio.router, prefix="/api")
 app.include_router(chatbot_endpoint.router, prefix="/api")
 app.include_router(query_zilliz_milvus_api.router, prefix="/api")
 
+# Health check endpoint
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
