@@ -20,10 +20,11 @@ Hello! I am Engage Pro,
 
 customer_details = """
    
-    From the customer details list down in bulleted format ONLY important attributes which are: Sector, Products Held, Digital Engagement , Satisfaction, Competitor Attractiveness and Churn Risk  
+    From the customer details list down in bullet list format ONLY important attributes which are: Churn Risk, Sector, Products Held, Digital Engagement, Satisfaction, Competitor Attractiveness and Customer Name. 
    
    1) Use only the available customer profile data.
    2) Provide the customer profile details in a more readable format along with some explanation of the values
+   3) Do not use too many new line chars in formatted response and keep it compact or tabular
 
 """
 
