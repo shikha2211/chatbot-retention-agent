@@ -13,8 +13,6 @@ load_dotenv()  # Load environment variables
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 CUSTOMER_API_URL = os.getenv('CUSTOMER_API_URL')
 RAG_API_URL = os.getenv('RAG_API_URL')
-print(f'CUSTOMER_API_UR {CUSTOMER_API_URL}')
-print(f'RAG_API_URL {RAG_API_URL}')
 
 async def CustomerDataTool(customer_id: str) -> Dict[str, Any]:
         """Fetches customer details"""

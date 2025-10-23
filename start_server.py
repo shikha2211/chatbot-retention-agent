@@ -8,6 +8,9 @@ import uvicorn
 import os
 from dotenv import load_dotenv
 from main import app
+from services.scheduler_job import startScheduler
+import threading
+
 
 # Load environment variables
 load_dotenv()
@@ -24,10 +27,17 @@ def main():
     print(f"\n==>Host: {host}")
     print(f"\n==>Port: {port}")
     print(f"\n==>Reload: {reload}")
+    print(f"\n==>MONGO_URI: {os.getenv('MONGO_URI')}")
+    print(f"\n==>CUSTOMER_API_URL: {os.getenv('CUSTOMER_API_URL')}")
+    print(f"\n==>MILVUS_URI: {os.getenv('MILVUS_URI')}")
+    
     print(f"\n==>API Documentation: http://{host}:{port}/docs")
     print(f"\n==>Chat Endpoint: http://{host}:{port}/api/chat")
     print(f"\n==>Health Check: http://{host}:{port}/api/chat/health")
-    
+    print(f"\n==>Finally starting the scheduler")
+    threading.Thread(target=startScheduler, daemon=True).start()
+
+
     # Start the server
     uvicorn.run(
         "main:app",

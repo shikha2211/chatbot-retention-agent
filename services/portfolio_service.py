@@ -12,8 +12,6 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 
-print(f'====> MONGO_URI is : {MONGO_URI}')
-
 if MONGO_URI is None or "localhost" in MONGO_URI:
     MONGO_URI="mongodb+srv://admin:retention-db-connect@retention-agent-db.xz7rajn.mongodb.net/?retryWrites=true&w=majority"
 
