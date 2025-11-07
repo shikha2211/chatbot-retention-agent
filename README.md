@@ -35,6 +35,8 @@ python start_server.py
 ```
 
 
+### Architecture
+
 ![Architecture](/assets/arch.png)
 ## Docker Build
 
