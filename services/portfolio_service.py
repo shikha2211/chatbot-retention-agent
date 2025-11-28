@@ -92,7 +92,9 @@ class PortfolioWebSocketManager:
     def _watch_changes(self):
         try:
             # Watch for changes in the portfolio_data collection
-            with collection.watch() as stream:
+            # Use fullDocumentBeforeChange to capture rmId before deletion
+            pipeline = [{'$match': {'operationType': {'$in': ['insert', 'update', 'replace', 'delete']}}}]
+            with collection.watch(pipeline, full_document_before_change='whenAvailable') as stream:
                 for change in stream:
                     if not self.change_stream_active:
                         break
@@ -105,17 +107,23 @@ class PortfolioWebSocketManager:
                         # Get the rmId from the changed document
                         rm_id = None
                         
-                        if 'fullDocument' in change and change['fullDocument']:
+                        if operation_type == 'delete':
+                            # For delete operations, get rmId from fullDocumentBeforeChange
+                            if 'fullDocumentBeforeChange' in change and change['fullDocumentBeforeChange']:
+                                rm_id = change['fullDocumentBeforeChange'].get('rmId')
+                            else:
+                                logger.warning("Could not get rmId from deleted document, checking all active connections")
+                                for active_rm_id in list(self.active_connections.keys()):
+                                    updated_portfolio = get_portfolio_for_user(active_rm_id)
+                                    if updated_portfolio:
+                                        asyncio.run(self.send_portfolio_update(active_rm_id, updated_portfolio))
+                                    else:
+                                        # Send empty portfolio if all data was cleared
+                                        empty_portfolio = {"High": [], "Medium": [], "Low": []}
+                                        asyncio.run(self.send_portfolio_update(active_rm_id, empty_portfolio))
+                                continue
+                        elif 'fullDocument' in change and change['fullDocument']:
                             rm_id = change['fullDocument'].get('rmId')
-                        elif 'documentKey' in change:
-                            # For delete operations, try to get rmId from the document
-                            doc_id = change['documentKey']['_id']
-                            try:
-                                doc = collection.find_one({"_id": doc_id})
-                                if doc:
-                                    rm_id = doc.get('rmId')
-                            except Exception as e:
-                                logger.error(f"Error fetching document for rmId: {e}")
                         
                         logger.info(f"Change for rmId: {rm_id}, Active connections: {list(self.active_connections.keys())}")
                         
@@ -127,8 +135,11 @@ class PortfolioWebSocketManager:
                                 # Use asyncio to run the async function in the thread
                                 asyncio.run(self.send_portfolio_update(rm_id, updated_portfolio))
                             else:
-                                logger.warning(f"No portfolio data found for {rm_id}")
-                        else:
+                                # Send empty portfolio when data is cleared
+                                logger.info(f"Sending empty portfolio update to {rm_id}")
+                                empty_portfolio = {"High": [], "Medium": [], "Low": []}
+                                asyncio.run(self.send_portfolio_update(rm_id, empty_portfolio))
+                        elif rm_id:
                             logger.info(f"No active connections for rmId: {rm_id}")
                                 
         except Exception as e:
@@ -198,4 +209,21 @@ def create_portfolio_entry(portfolio_data: dict) -> dict:
         return {
             "success": False,
             "message": f"Error creating portfolio entry: {str(e)}"
+        }
+
+
+def clear_portfolio_data(rmId: str) -> dict:
+    """Clear all portfolio data from MongoDB"""
+    try:
+        result = collection.delete_many({"rmId": rmId})
+        logger.info(f"Cleared portfolio collection. Deleted {result.deleted_count} documents")
+        return {
+            "success": True,
+            "message": f"Portfolio data cleared successfully. Deleted {result.deleted_count} documents"
+        }
+    except Exception as e:
+        logger.error(f"Error clearing portfolio data: {e}")
+        return {
+            "success": False,
+            "message": f"Error clearing portfolio data: {str(e)}"
         }
