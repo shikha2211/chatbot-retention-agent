@@ -34,7 +34,6 @@ class SummaryGenerator:
             "total_customers_processed": len(all_actions),  # All customers that went through the system
             "total_strategies_found": sum(len(strategies) for strategies in categorized_strategies.values()),
             "total_actions_executed": status_counts.get("executed", 0),
-            "total_actions_planned": status_counts.get("planned", 0),
             "total_actions_failed": status_counts.get("failed", 0),
             "total_customers_filtered": status_counts.get("filtered", 0),
             "total_no_strategy": status_counts.get("no_strategy", 0),

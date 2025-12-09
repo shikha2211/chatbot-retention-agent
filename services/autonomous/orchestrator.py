@@ -13,7 +13,6 @@ from services.autonomous.strategy.categorizer import strategy_categorizer
 
 # Execution modules
 from services.autonomous.execution.executor import strategy_executor
-from services.autonomous.execution.mock_executor import mock_executor
 
 # Persistence modules
 from services.autonomous.persistence.db_updater import db_updater
@@ -51,7 +50,7 @@ class AutonomousOrchestrator:
         7. Update database
         8. Record actions and build summary
         """
-        logger.info(f"Starting autonomous workflow - RM: {request.rm_id}, dry_run: {request.dry_run}")
+        logger.info(f"Starting autonomous workflow - RM: {request.rm_id}")
         
         # Step 1: Get all at-risk customers
         at_risk_customers = await customer_finder.discover_at_risk_customers(request.rm_id)
@@ -76,16 +75,11 @@ class AutonomousOrchestrator:
         system_actions = categorized_strategies.pop("_system_actions", [])
         
         # Step 6: Execute strategies
-        executed_actions = []
-        if not request.dry_run:
-            executed_actions = await strategy_executor.execute_strategies(categorized_strategies)
-            
-            # Step 7: Update database (only for successful/failed execution actions, not system actions)
-            db_actions = [a for a in executed_actions if a.actionType != "system"]
-            await db_updater.update_action_records(db_actions)
-        else:
-            # For dry run, create mock actions
-            executed_actions = mock_executor.create_mock_actions(categorized_strategies)
+        executed_actions = await strategy_executor.execute_strategies(categorized_strategies)
+        
+        # Step 7: Update database (only for successful/failed execution actions, not system actions)
+        db_actions = [a for a in executed_actions if a.actionType != "system"]
+        await db_updater.update_action_records(db_actions)
         
         # Step 8: Combine all actions and record them
         all_actions = executed_actions + filtered_actions + system_actions

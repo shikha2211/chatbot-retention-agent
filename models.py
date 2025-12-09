@@ -84,7 +84,6 @@ class PortfolioResponse(BaseModel):
 class AutoAgentRequest(BaseModel):
     """Request model for autonomous agent operations"""
     rm_id: Optional[str] = Field(None, description="Filter specific RM")
-    dry_run: bool = Field(False, description="Preview actions without execution")
     risk_threshold: float = Field(0.5, description="Minimum risk score to process")
 
 
@@ -119,7 +118,6 @@ class AutoAgentSummary(BaseModel):
     total_customers_processed: int = 0
     total_strategies_found: int = 0
     total_actions_executed: int = 0
-    total_actions_planned: int = 0
     total_actions_failed: int = 0
     total_customers_filtered: int = 0
     total_no_strategy: int = 0
@@ -136,7 +134,6 @@ class AutoAgentResponse(BaseModel):
     summary: AutoAgentSummary
     execution_time: float
     timestamp: str
-    dry_run: bool = False
 
 
 # Configuration Models

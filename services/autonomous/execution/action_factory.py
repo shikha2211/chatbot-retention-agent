@@ -50,18 +50,6 @@ class ActionFactory:
             }
         )
     
-    def create_planned_action(self, customer: Dict, strategy: Dict, risk_level: str) -> AutonomousAction:
-        """Create a planned action record for dry runs"""
-        return AutonomousAction(
-            customerId=customer.get("customerId"),
-            strategyId=strategy.get("retentionStrategyId", "MOCK"),
-            strategyName=strategy.get("strategyName", "Mock Strategy"),
-            actionType=action_type_mapper.determine_action_type(strategy),
-            priority=priority_calculator.get_priority_for_risk_level(risk_level),
-            estimatedImpact=strategy.get("estimatedSuccessRate", 0.5),
-            status="planned",
-            executionDetails={"dry_run": True}
-        )
 
 
 # Singleton instance

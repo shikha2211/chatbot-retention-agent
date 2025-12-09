@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 
 from models import AutoAgentRequest, AutoAgentResponse, AutoAgentSummary
-from services.autonomous_service import autonomous_service
+from services.autonomous.orchestrator import autonomous_orchestrator
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -47,7 +47,6 @@ logger = logging.getLogger(__name__)
                             "total_customers_processed": 25,
                             "total_strategies_found": 20,
                             "total_actions_executed": 18,
-                            "total_actions_planned": 0,
                             "total_actions_failed": 2,
                             "total_customers_filtered": 3,
                             "total_no_strategy": 2,
@@ -60,8 +59,7 @@ logger = logging.getLogger(__name__)
                             }
                         },
                         "execution_time": 12.34,
-                        "timestamp": "2024-01-15T10:30:15Z",
-                        "dry_run": False
+                        "timestamp": "2024-01-15T10:30:15Z"
                     }
                 }
             }
@@ -95,10 +93,6 @@ async def trigger_autonomous_agent(
         example="RM_001",
         regex="^RM_[A-Z0-9]{3,}$"
     ),
-    dry_run: bool = Query(
-        False, 
-        description="If true, preview actions without executing them or updating database"
-    ),
     risk_threshold: float = Query(
         0.5, 
         description="Minimum risk score to process customers (0.0 to 1.0)",
@@ -121,12 +115,10 @@ async def trigger_autonomous_agent(
     
     ## Parameters:
     - **rm_id**: Filter to specific Relationship Manager's customers
-    - **dry_run**: Preview mode - shows planned actions without execution
     - **risk_threshold**: Currently unused (reserved for future filtering)
     
     ## Action Types Generated:
     - `executed`: Successfully processed retention actions
-    - `planned`: Dry-run preview actions 
     - `failed`: Actions that encountered errors
     - `filtered`: Customers excluded due to batch limits
     - `no_strategy`: Customers with no matching retention strategies
@@ -142,17 +134,16 @@ async def trigger_autonomous_agent(
     start_time = time.time()
     
     try:
-        logger.info(f"Starting autonomous agent - RM: {rm_id}, dry_run: {dry_run}, threshold: {risk_threshold}")
+        logger.info(f"Starting autonomous agent - RM: {rm_id}, threshold: {risk_threshold}")
         
         # Create request object
         request = AutoAgentRequest(
             rm_id=rm_id,
-            dry_run=dry_run,
             risk_threshold=risk_threshold
         )
         
         # Execute the autonomous workflow
-        result = await autonomous_service.execute_autonomous_workflow(request)
+        result = await autonomous_orchestrator.execute_autonomous_workflow(request)
         
         execution_time = time.time() - start_time
         
@@ -162,8 +153,7 @@ async def trigger_autonomous_agent(
             actions_taken=result["actions_taken"],
             summary=AutoAgentSummary(**result["summary"]),
             execution_time=round(execution_time, 2),
-            timestamp=datetime.now().isoformat(),
-            dry_run=dry_run
+            timestamp=datetime.now().isoformat()
         )
         
         logger.info(f"Autonomous agent completed in {execution_time:.2f}s - Processed: {result['processed_customers']} customers")
@@ -261,7 +251,7 @@ async def get_autonomous_agent_status():
     - Troubleshooting execution failures
     """
     try:
-        status = await autonomous_service.get_system_status()
+        status = await autonomous_orchestrator.get_system_status()
         
         return {
             "status": "healthy" if status["all_healthy"] else "degraded",
@@ -277,87 +267,3 @@ async def get_autonomous_agent_status():
             "timestamp": datetime.now().isoformat()
         }
 
-
-@router.get(
-    "/auto/agent/preview",
-    summary="Preview Autonomous Actions",
-    description="Show planned actions without execution",
-    responses={
-        200: {
-            "description": "Preview generated successfully",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "preview": True,
-                        "would_process_customers": 15,
-                        "planned_actions": [
-                            {
-                                "customerId": "CUST_67890",
-                                "strategyId": "STR_CALL_002",
-                                "strategyName": "High-Risk Customer Follow-up Call",
-                                "actionType": "call",
-                                "priority": 1,
-                                "estimatedImpact": 0.85,
-                                "status": "planned",
-                                "executionDetails": {
-                                    "dry_run": True
-                                }
-                            }
-                        ],
-                        "summary": {
-                            "high_risk": 5,
-                            "medium_risk": 8,
-                            "low_risk": 2,
-                            "total_customers_processed": 15,
-                            "total_strategies_found": 12,
-                            "total_actions_executed": 0,
-                            "total_actions_planned": 12,
-                            "total_actions_failed": 0,
-                            "total_customers_filtered": 1,
-                            "total_no_strategy": 2,
-                            "total_discovery_failed": 0,
-                            "status_breakdown": {
-                                "planned": 12,
-                                "no_strategy": 2,
-                                "filtered": 1
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-)
-async def preview_autonomous_actions(
-    rm_id: Optional[str] = Query(None, description="Filter specific RM", example="RM_001"),
-    risk_threshold: float = Query(0.5, ge=0.0, le=1.0, description="Minimum risk score (0.0-1.0)")
-):
-    """
-    Preview planned retention actions without executing them.
-    
-    Shows what the autonomous agent would do without sending emails, 
-    making calls, or updating the database. Useful for testing and validation.
-    """
-    try:
-        request = AutoAgentRequest(
-            rm_id=rm_id,
-            dry_run=True,  # Always true for preview
-            risk_threshold=risk_threshold
-        )
-        
-        result = await autonomous_service.execute_autonomous_workflow(request)
-        
-        return {
-            "preview": True,
-            "would_process_customers": result["processed_customers"],
-            "planned_actions": result["actions_taken"],
-            "summary": result["summary"],
-            "timestamp": datetime.now().isoformat()
-        }
-        
-    except Exception as e:
-        logger.error(f"Error in autonomous agent preview: {str(e)}")
-        raise HTTPException(
-            status_code=500,
-            detail=f"Preview failed: {str(e)}"
-        )

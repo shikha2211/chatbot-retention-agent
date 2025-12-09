@@ -37,7 +37,7 @@ class StrategyCategorizer:
                 customer_profile = profile_converter.convert_to_customer_profile(customer_data)
                 
                 # Use RAG service to find strategies
-                strategy = strategy_finder.find_strategy_for_customer(customer_profile)
+                strategy = await strategy_finder.find_strategy_for_customer(customer_profile)
                 
                 if strategy:
                     risk_category = customer_data.get("churnRiskCategory", "Medium")
