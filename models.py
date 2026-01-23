@@ -77,3 +77,8 @@ class PortfolioCreateRequest(BaseModel):
     success: bool
     message: str
     customerId: Optional[str] = None
+
+
+class ClearPortfolioRequest(BaseModel):
+    """Request model for clearing portfolio data for a specific RM"""
+    rmId: str = Field(..., description="Relationship manager ID to clear portfolio data for")
