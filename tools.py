@@ -58,3 +58,6 @@ async def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
                 print(f"\n\n===>ERROR: Error while RAG call for strategies: {str(e)}")
                 # Return a fallback response instead of None
                 return {"error": f"Service unavailable: {str(e)}", "strategies": []}
+
+def health_check_tool() -> dict:
+    return {"status": "healthy"}
