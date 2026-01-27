@@ -71,7 +71,9 @@ async def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
         """Retrieves RAG-based strategies"""
         try:
                 print(f'\n\n===>inside new StrategyRetrievalTool context is: {customerData}')
-                results = query_zilliz_milvus_service(customerData)
+                # Convert Pydantic model to dict for query_zilliz_milvus_service
+                customer_dict = customerData.model_dump()
+                results = query_zilliz_milvus_service(customer_dict)
                 return results
         
         except Exception as e:

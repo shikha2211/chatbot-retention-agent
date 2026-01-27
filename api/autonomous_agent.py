@@ -91,7 +91,6 @@ async def trigger_autonomous_agent(
         None, 
         description="Relationship Manager ID to filter customers (leave empty for all RMs)",
         example="RM_001",
-        regex="^RM_[A-Z0-9]{3,}$"
     ),
     risk_threshold: float = Query(
         0.5, 
