@@ -177,3 +177,7 @@ class BusinessRulesConfig(BaseModel):
     high_risk_action_limit: int = Field(default=10, description="Maximum high-risk actions per execution")
     medium_risk_action_limit: int = Field(default=50, description="Maximum medium-risk actions per execution")
     low_risk_action_limit: int = Field(default=100, description="Maximum low-risk actions per execution")
+
+class ClearPortfolioRequest(BaseModel):
+    """Request model for clearing portfolio data for a specific RM"""
+    rmId: str = Field(..., description="Relationship manager ID to clear portfolio data for")

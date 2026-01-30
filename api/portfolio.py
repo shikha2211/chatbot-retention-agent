@@ -1,5 +1,6 @@
-from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
+from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect, Response
 from services.portfolio_service import get_portfolio_for_user, PortfolioWebSocketManager
+from models import ClearPortfolioRequest
 import json
 
 router = APIRouter()
@@ -64,3 +65,16 @@ def create_portfolio(portfolio_request: dict):
             raise HTTPException(status_code=500, detail=result.get("message"))
     
     return result
+
+@router.post("/refresh-portfolio")
+def clear_portfolio(request: ClearPortfolioRequest):
+    """Clear portfolio data for a specific RM/user from MongoDB.
+    
+    Request body should contain: {"rmId": "shipra123"}
+    Usage: POST /api/refresh-portfolio with body {"rmId": "shipra123"}
+    """
+    from services.portfolio_service import clear_portfolio_data
+    result = clear_portfolio_data(request.rmId)
+    if not result.get("success"):
+        raise HTTPException(status_code=500, detail=result.get("message"))
+    return Response(status_code=204)

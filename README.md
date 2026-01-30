@@ -34,6 +34,10 @@ source .venv/bin/activate
 python start_server.py
 ```
 
+
+### Architecture
+
+![Architecture](/assets/arch.png)
 ## Docker Build
 
 Build and run
