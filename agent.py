@@ -6,7 +6,7 @@ from google.adk.models.lite_llm import LiteLlm
 from dotenv import load_dotenv  # Import load_dotenv
 from google.genai import types  # For creating message Content/Parts
 from google.adk.tools import google_search
-from tools import CustomerDataTool, StrategyRetrievalTool
+from tools import CustomerDataTool, StrategyRetrievalTool, AllCustomersDataTool
 from agent_prompt import instructionsForAgent
 import warnings
 
@@ -35,7 +35,7 @@ root_agent = LlmAgent(
     description="This agent specializes in Providing customer details and retention strategies based on user query",
     # output_schema=CommonResponseStringModel,
     instruction=instructionsForAgent,
-    tools=[CustomerDataTool, StrategyRetrievalTool],
+    tools=[CustomerDataTool, StrategyRetrievalTool, AllCustomersDataTool],
 )
 
 # expose the above agent as a fast api endpoint POST /retention-agent/query
