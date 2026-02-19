@@ -1,6 +1,6 @@
 from fastmcp import FastMCP
-from .mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
-from .customer_service import customer_data_wrapper
+from mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
+from customer_service import customer_data_wrapper
 
 # Create MCP server instance
 mcp = FastMCP(
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     print("Server URL: http://0.0.0.0:3333")
     print("\nTo connect from ADK agents, use:")
     print("  from adk_agent import create_agent")
-    print("  agent = create_agent(server_url='http://localhost:3333/sse')")
+    print("  agent = create_agent(server_url='http://localhost:3333/mcp')")
     print()
 
     mcp.run(
