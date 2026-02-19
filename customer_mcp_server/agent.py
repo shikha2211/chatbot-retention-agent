@@ -9,7 +9,8 @@ connection_params = StdioConnectionParams(
     server_params={
         "command": "python",
         "args": ["mcp_tools.py"],
-        "cwd": "customer_mcp_server"
+        "cwd": "customer_mcp_server",
+        "env": {"PYTHONPATH": ".."} # It tells the background process to look one level up (..) so it can resolve 'from customer_mcp_server import
     }
 )
 

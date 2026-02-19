@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 # Use absolute imports to ensure ADK can find them
-from mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
-from customer_service import customer_data_wrapper
+from customer_mcp_server.mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
+from customer_mcp_server.customer_service import customer_data_wrapper
 
 mcp = FastMCP("Customer Retention Server")
 

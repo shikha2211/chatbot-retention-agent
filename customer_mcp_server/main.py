@@ -1,39 +1,24 @@
-from fastmcp import FastMCP
-from mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
-from customer_service import customer_data_wrapper
+import uvicorn
+from fastapi import FastAPI
+# Use absolute imports for the background logic
+from customer_mcp_server.mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
+from customer_mcp_server.customer_service import customer_data_wrapper
+from customer_mcp_server.tools_api import router as tools_router
 
-# Create MCP server instance
-mcp = FastMCP(
-    "customer_mcp_server",
-)
+# 1. Initialize the FastAPI app
+# This is the "app" variable uvicorn is looking for
+app = FastAPI(title="Customer Retention Browser API")
 
-# Register tools using decorators
-@mcp.tool()
-async def health_check() -> dict:
-    """Health check for MCP service."""
-    return await McpHealthCheckTool()
+# 2. Include the router from your tools_api.py
+app.include_router(tools_router)
 
-@mcp.tool()
-async def customer_data(customer_id: str) -> dict:
-    """Fetch customer data by ID."""
-    return await McpFetchCustomerInfo(customer_id)
-
-@mcp.tool()
-async def customer_data_text(text: str) -> dict:
-    """Extract customer ID from text and fetch customer data."""
-    return await customer_data_wrapper(text)
-
+@app.get("/")
+async def root():
+    return {
+        "status": "online",
+        "message": "Browser API is running. Access /docs for interactive testing."
+    }
 
 if __name__ == "__main__":
-    print("Starting Customer MCP Server...")
-    print("Server URL: http://0.0.0.0:3333")
-    print("\nTo connect from ADK agents, use:")
-    print("  from adk_agent import create_agent")
-    print("  agent = create_agent(server_url='http://localhost:3333/mcp')")
-    print()
-
-    mcp.run(
-        transport="http",
-        host="0.0.0.0",
-        port=3333
-    )
+    # This block allows running via 'python -m customer_mcp_server.main'
+    uvicorn.run(app, host="127.0.0.1", port=8080)
