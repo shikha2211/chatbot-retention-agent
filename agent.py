@@ -3,7 +3,8 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.adk.agents import LlmAgent
 from tools import CustomerDataTool, StrategyRetrievalTool
-from mcp_functions import McpCustomerDataTool, McpStrategyRetrievalTool
+# from mcp_client.mcp_functions import McpFetchCustomerInfo
+# from mcp_client.customer_service import customer_data_wrapper
 from dotenv import load_dotenv
 from google.genai import types
 from agent_prompt import instructionsForAgent
@@ -29,7 +30,8 @@ root_agent = LlmAgent(
     model=AGENT_MODEL,
     description="This agent invokes MCP tools for customer data and strategy retrieval",
     instruction=instructionsForAgent,
-    tools=[CustomerDataTool,StrategyRetrievalTool,McpCustomerDataTool,McpStrategyRetrievalTool],
+    tools=[CustomerDataTool, StrategyRetrievalTool],
+    # tools=[CustomerDataTool, StrategyRetrievalTool, McpFetchCustomerInfo, customer_data_wrapper],
 )
 
 session_service = InMemorySessionService()
