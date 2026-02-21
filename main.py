@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastmcp import FastMCP
 from fastapi.middleware.cors import CORSMiddleware
-from api import portfolio, chatbot_endpoint, query_zilliz_milvus_api
-# from customer_mcp_server.mcp_tools import register_mcp_tools
+from api import portfolio, chatbot_endpoint, query_zilliz_milvus_api, autonomous_agent
 
 app = FastAPI(
     title="Customer Retention Agent API",
@@ -22,7 +21,7 @@ app.add_middleware(
 app.include_router(portfolio.router, prefix="/api")
 app.include_router(chatbot_endpoint.router, prefix="/api")
 app.include_router(query_zilliz_milvus_api.router, prefix="/api")
-# app.include_router(tools_api_router)
+app.include_router(autonomous_agent.router, prefix="/api")
 
 # Health check endpoint
 @app.get("/health")
