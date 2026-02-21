@@ -2,7 +2,7 @@
 Quick test to verify agent can call tools via MCP integration
 """
 import asyncio
-from agent import runner, session_service
+from services.agent import runner, session_service
 from google.genai import types
 
 async def test_agent_tools():

@@ -1,7 +1,8 @@
+import sys
 from mcp.server.fastmcp import FastMCP
 # Use absolute imports to ensure ADK can find them
-from customer_mcp_server.mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
-from customer_mcp_server.customer_service import customer_data_wrapper
+from mcp_functions import McpFetchCustomerInfo, McpHealthCheckTool
+from customer_service import customer_data_wrapper
 
 mcp = FastMCP("Customer Retention Server")
 
@@ -32,6 +33,7 @@ async def customer_data_text(text: str):
 
 
 if __name__ == "__main__":
+    print("🚀 Customer MCP Server (Stdio) is starting...", file=sys.stderr)
     # FastMCP starts its own event loop here
     mcp.run(transport="stdio")
 

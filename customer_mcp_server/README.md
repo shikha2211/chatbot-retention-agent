@@ -1,49 +1,70 @@
 # Execution Guide: Customer Retention Agent (v1.25.1)
 
-Follow these steps to run and test each component. Separate files are used for Browser testing (HTTP) and AI Agent testing (Stdio) to ensure stability.
+This project uses a modular architecture where the **AI Agent** lives in the `services/` folder and the **MCP Tools** live in the `customer_mcp_server/` folder. A **Feature Flag** is used to toggle MCP functionality.
 
 ---
 
-## 1. Steps to Run the Tools API (For Browser Testing)
-This starts the **FastAPI** server, allowing you to hit endpoints directly in your browser or via Swagger docs.
+## 🚀 1. Pre-requisites & Configuration
 
-1.  Open a terminal and navigate to the project root: `chatbot-retention-agent/`.
-2.  Activate your environment: `source .venv/bin/activate`.
-3.  Set the Python Path: `export PYTHONPATH=$(pwd)`.
-4.  Run the command:
+Before running any component, ensure your environment is set up:
+
+1.  **Activate Environment:** `source .venv/bin/activate`
+2.  **Set Python Path:** `export PYTHONPATH=$(pwd)`
+3.  **Configure Feature Flag:** Open the `.env` file in the root directory and set:
+    *   `FF_MCP_ENABLED=true` (To enable MCP tools like customer_data_by_id)
+    *   `FF_MCP_ENABLED=false` (To use only local tools)
+
+> **Note:** If you change the `FF_MCP_ENABLED` value, you **must restart** the ADK or Uvicorn server for the changes to take effect.
+
+---
+
+## 🌐 2. Steps to Run the Tools API (Browser Testing)
+This starts the **FastAPI** server on Port 8080 for manual verification of customer data.
+
+1.  **Terminal:** Stay in the project root `chatbot-retention-agent/`.
+2.  **Run Command:**
     ```bash
     python -m uvicorn customer_mcp_server.main:app --host 127.0.0.1 --port 8080 --reload
     ```
-5.  **Verification:** The terminal should show `Uvicorn running on http://127.0.0.1:8080`.
-6.  **Browser Tests:**
+3.  **Browser Tests (Port 8080):**
     *   **Interactive Docs (Swagger):** [http://127.0.0.1](http://127.0.0.1)
     *   **Customer Lookup:** [http://127.0.0.1](http://127.0.0.1)
-    *   **Health Check:** [http://127.0.0.1](http://127.0.0.1)
 
 ---
 
-## 2. Steps to Run the ADK Agent (For AI Chat)
-This starts the **Google Agent Development Kit** interface. The agent uses `mcp_tools.py` via **Stdio** (Standard Input/Output), so no separate port is needed for the tools logic.
+## 🤖 3. Steps to Run the ADK Agent (AI Chat)
+This starts the **Google Agent Development Kit** on Port 8000.
 
-1.  Open a **new** terminal window and navigate to the project root: `chatbot-retention-agent/`.
-2.  Activate your environment: `source .venv/bin/activate`.
-3.  Run the command:
+1.  **Terminal:** Open a new tab in the project root `chatbot-retention-agent/`.
+2.  **Run Command:**
     ```bash
     adk web .
     ```
-4.  **Verification:** The terminal will show `ADK Web Server started at http://localhost:8000`.
-5.  **AI Chat Test:**
+3.  **AI Chat Test (Port 8000):**
     *   Open [http://localhost:8000](http://localhost:8000) in your browser.
-    *   Select **customer_retention_agent** from the dropdown.
-    *   **Try asking:** *"Who are my top spenders?"* or *"What is the status of customer CUST_0008?"*
+    *   **Dropdown Selection:** Select **`services`** from the agent dropdown.
+    *   **Verify MCP:** Look for the log `🛠️ MCP Mode: Enabled` in your terminal.
+    *   **Try asking:** *"Who are my top 3 spenders?"* or *"What is the status of customer CUST_0001?"*
 
 ---
 
-## Troubleshooting Checklist
+## 🛠️ Troubleshooting Checklist
 
-*   **Address already in use:** If you see `Errno 48`, run `lsof -ti:8080 | xargs kill -9` to clear the port.
-*   **ModuleNotFoundError:** Ensure you ran `export PYTHONPATH=$(pwd)` in the terminal where you are running `uvicorn`.
-*   **Cancel Scope Error in ADK:** This usually means a crash in `mcp_tools.py`. Ensure your `agent.py` includes `"env": {"PYTHONPATH": ".."}` in the `StdioConnectionParams` to handle absolute imports.
-*   **Not Found (404):** In the browser, ensure you are hitting port **8080**. For the Agent UI, ensure you are hitting port **8000**.
+*   **"No root_agent found for 'services'":** Ensure your agent code is in `services/agent.py` and the variable is named exactly `root_agent`.
+*   **"Address already in use" (Errno 48):** Run `lsof -ti:8080 | xargs kill -9` to clear the port.
+*   **"ModuleNotFoundError":** This usually means the `export PYTHONPATH=$(pwd)` was missed in the current terminal session.
+*   **"Attempted to exit cancel scope":** This means `mcp_tools.py` crashed. Ensure `agent.py` has the correct `cwd` and `env: {"PYTHONPATH": ".."}` settings.
+*   **MCP Tools not appearing:** Ensure `FF_MCP_ENABLED=true` is set in `.env` and you have restarted the `adk web .` command.
 
 ---
+
+## Project Structure
+```text
+chatbot-retention-agent/
+├── .env                # Global configuration & Feature Flags
+├── services/           # AI Agent (Auto-loaded by ADK)
+│   └── agent.py        # Main Agent logic
+└── customer_mcp_server/# Tool Provider (Shared by API and Agent)
+    ├── main.py         # Entry point for Browser API
+    ├── mcp_tools.py    # Entry point for ADK Stdio
+    └── mcp_functions.py# Core data logic

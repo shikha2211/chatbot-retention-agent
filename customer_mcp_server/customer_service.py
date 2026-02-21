@@ -4,7 +4,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from typing import Any, Dict
 import re
-from customer_mcp_server.mcp_functions import McpFetchCustomerInfo
+from mcp_functions import McpFetchCustomerInfo
 
 load_dotenv()
 
