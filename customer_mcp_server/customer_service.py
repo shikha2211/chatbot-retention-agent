@@ -24,7 +24,7 @@ def extract_customer_id_from_text(text: str) -> str:
     try:
         # Try LLM extraction first
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gemini-2.0-flash",
             messages=[
                 {
                     "role": "system",
