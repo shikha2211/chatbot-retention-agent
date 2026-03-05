@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastmcp import FastMCP
 from fastapi.middleware.cors import CORSMiddleware
 from api import portfolio, chatbot_endpoint, query_zilliz_milvus_api, autonomous_agent
 

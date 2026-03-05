@@ -9,3 +9,4 @@ litellm
 pymongo
 pymilvus
 schedule
+fastmcp==2.14.1

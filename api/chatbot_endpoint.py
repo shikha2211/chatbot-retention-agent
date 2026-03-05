@@ -11,7 +11,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Import ADK components
 try:
-    from agent import runner, session_service
+    from services.agent import runner, session_service
     from google.genai import types
 
     ADK_AVAILABLE = True

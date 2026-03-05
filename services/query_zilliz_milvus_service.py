@@ -2,8 +2,9 @@ import configparser
 import json
 import os
 import random
-from typing import List
+from typing import List, Any, Dict
 from pymilvus import MilvusClient
+from fastapi import HTTPException
 
 
 def load_config():
@@ -33,9 +34,17 @@ def load_customer_record(path: str) -> dict:
     return data
 
 
-def build_customer_embedding(customer: dict, dim: int = 64) -> List[float]:
+def build_customer_embedding(customer: Any, dim: int = 64) -> List[float]:
     # Produce a stable pseudo-embedding seeded by customerId
-    seed_basis = str(customer.get('customerId', 'anon'))
+    # Accept either a dict or a Pydantic model (attribute access)
+    customer_id = None
+    if isinstance(customer, dict):
+        customer_id = customer.get('customerId') or customer.get('customer_id')
+    else:
+        # attempt attribute access
+        customer_id = getattr(customer, 'customerId', None) or getattr(customer, 'customer_id', None)
+
+    seed_basis = str(customer_id or 'anon')
     random.seed(hash(seed_basis) % (2**32))
     return [random.random() for _ in range(dim)]
 

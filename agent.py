@@ -1,12 +1,9 @@
 import os
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
-from google.adk.agents import LlmAgent
-from google.adk.models.lite_llm import LiteLlm
 from dotenv import load_dotenv  # Import load_dotenv
-from google.genai import types  # For creating message Content/Parts
-from google.adk.tools import google_search
 from tools import CustomerDataTool, StrategyRetrievalTool, AllCustomersDataTool
+from common import create_retention_agent
 from agent_prompt import instructionsForAgent
 import warnings
 
@@ -28,15 +25,12 @@ os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
 
-
-root_agent = LlmAgent(
-    name="retention_agent",
-    model=AGENT_MODEL,
-    description="This agent specializes in Providing customer details and retention strategies based on user query",
-    # output_schema=CommonResponseStringModel,
-    instruction=instructionsForAgent,
+root_agent = create_retention_agent(
     tools=[CustomerDataTool, StrategyRetrievalTool, AllCustomersDataTool],
-)
+    instruction=instructionsForAgent,
+    description="This agent specializes in Providing customer details and retention strategies based on user query",
+    model=AGENT_MODEL
+    )
 
 # expose the above agent as a fast api endpoint POST /retention-agent/query
 # Deploy on some cloud
