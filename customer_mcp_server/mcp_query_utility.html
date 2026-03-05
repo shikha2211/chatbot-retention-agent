@@ -1,0 +1,472 @@
+<!--
+MCP Customer Data Query Utility
+
+Architecture Overview:
+- MCP Server: Runs on http://localhost:3333 (customer_mcp_server/main.py)
+  Provides MCP tools: health_check, customer_data, customer_data_text
+  
+- FastAPI REST Wrapper: Runs on http://localhost:8000 (root /main.py)
+  Provides REST endpoints: /api/tools/*, /mcp/tools/*, /api/chat/*, etc.
+  
+- ADK Agent: Configured in customer_mcp_server/adk_agent.py
+  Connects to MCP server via MCPToolset at http://localhost:3333/mcp
+  
+This utility uses the REST API wrapper to query customer data.
+For agent-based queries, use the ADK agent from adk_agent.py
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Customer Data Query Utility</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .input-section {
+            margin-bottom: 25px;
+        }
+
+        .input-section label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .input-group button {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .input-group button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .input-group button:active {
+            transform: translateY(0);
+        }
+
+        .input-group button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results-section {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .results-section.show {
+            display: block;
+        }
+
+        .results-header {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .customer-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .customer-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .customer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .detail-item {
+            background: white;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            color: #333;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .churn-risk-high {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .churn-risk-high .detail-value {
+            color: #856404;
+            font-weight: 600;
+        }
+
+        .error-section {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 6px;
+            padding: 15px;
+            color: #721c24;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .error-section.show {
+            display: block;
+        }
+
+        .error-icon {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .api-url {
+            background: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .input-group button {
+                width: 100%;
+            }
+
+            .customer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 MCP Customer Data Query</h1>
+            <p>Query customer information using the REST API wrapper (FastAPI on port 8000)</p>
+        </div>
+
+        <div class="input-section">
+            <label for="queryInput">Enter your query:</label>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="queryInput" 
+                    placeholder="e.g., 'Please tell me about customer CUST_0008'" 
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button onclick="submitQuery()">Submit</button>
+            </div>
+            <div class="api-url">
+                API: POST /api/tools/customer/query
+            </div>
+        </div>
+
+        <div class="loading" id="loadingSpinner">
+            <div class="spinner"></div>
+            <p>Fetching customer data...</p>
+        </div>
+
+        <div class="error-section" id="errorSection">
+            <span class="error-icon">⚠️</span>
+            <span id="errorMessage"></span>
+        </div>
+
+        <div class="results-section" id="resultsSection">
+            <div class="results-header">📊 Customer Information</div>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://127.0.0.1:8000';
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                submitQuery();
+            }
+        }
+
+        async function submitQuery() {
+            const queryInput = document.getElementById('queryInput');
+            const query = queryInput.value.trim();
+
+            if (!query) {
+                showError('Please enter a query');
+                return;
+            }
+
+            showLoading(true);
+            hideError();
+            hideResults();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/tools/customer/query`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text: query })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status} ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                if (data.error) {
+                    showError(data.error);
+                } else {
+                    displayResults(data);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError(`Failed to fetch data: ${error.message}`);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function displayResults(data) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            if (!data.customerId) {
+                showError('No customer data found');
+                return;
+            }
+
+            const churnLevel = data.churnRiskCategory === 'High' ? 'churn-risk-high' : '';
+            
+            const html = `
+                <div class="customer-card ${churnLevel}">
+                    <h3>Customer ID: ${escapeHtml(data.customerId)}</h3>
+                    <div class="customer-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Industry Sector</div>
+                            <div class="detail-value">${escapeHtml(data.industrySector || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Company Size</div>
+                            <div class="detail-value">${escapeHtml(data.companySize || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Tenure (Years)</div>
+                            <div class="detail-value">${escapeHtml(data.tenureWithBankYears || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Products Held</div>
+                            <div class="detail-value">${escapeHtml(data.productsHeld || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Digital Engagement Score</div>
+                            <div class="detail-value">${escapeHtml(data.digitalEngagementScore || 'N/A')} / 10</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Satisfaction Score</div>
+                            <div class="detail-value">${escapeHtml(data.satisfactionScore || 'N/A')} / 10</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Churn Risk Score</div>
+                            <div class="detail-value">${escapeHtml(String(data.churnRiskScore) || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Churn Risk Category</div>
+                            <div class="detail-value">${escapeHtml(data.churnRiskCategory || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Avg Current Account Balance</div>
+                            <div class="detail-value">$${escapeHtml(data.averageCurrentAccountBalance || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Deposit Balance</div>
+                            <div class="detail-value">$${escapeHtml(data.depositBalance || 'N/A')}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Overdraft Utilization</div>
+                            <div class="detail-value">${escapeHtml(data.overdraftUtilizationPercent || 'N/A')}%</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Credit Card Utilization</div>
+                            <div class="detail-value">${escapeHtml(data.creditCardUtilizationPercent || 'N/A')}%</div>
+                        </div>
+                    </div>
+                    ${data.primaryChurnReasons ? `
+                        <div class="detail-item" style="margin-top: 15px;">
+                            <div class="detail-label">Primary Churn Reasons</div>
+                            <div class="detail-value">${escapeHtml(data.primaryChurnReasons)}</div>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+
+            resultsContainer.innerHTML = html;
+            document.getElementById('resultsSection').classList.add('show');
+        }
+
+        function showError(message) {
+            const errorSection = document.getElementById('errorSection');
+            document.getElementById('errorMessage').textContent = message;
+            errorSection.classList.add('show');
+        }
+
+        function hideError() {
+            document.getElementById('errorSection').classList.remove('show');
+        }
+
+        function hideResults() {
+            document.getElementById('resultsSection').classList.remove('show');
+        }
+
+        function showLoading(show) {
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            if (show) {
+                loadingSpinner.classList.add('show');
+            } else {
+                loadingSpinner.classList.remove('show');
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Focus on input on page load
+        window.addEventListener('load', () => {
+            document.getElementById('queryInput').focus();
+        });
+    </script>
+</body>
+</html>
