@@ -35,5 +35,6 @@ async def customer_data_text(text: str):
 if __name__ == "__main__":
     print("🚀 Customer MCP Server (Stdio) is starting...", file=sys.stderr)
     # FastMCP starts its own event loop here
-    mcp.run(transport="stdio")
+    # mcp.run(transport="stdio")
+    mcp.run()
 
