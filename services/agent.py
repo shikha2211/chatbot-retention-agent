@@ -33,7 +33,7 @@ agent_tools = [CustomerDataTool, StrategyRetrievalTool]
 final_instructions = instructionsForAgent
 
 # 3. Conditionally add the MCP Toolset
-if not FF_MCP_ENABLED:
+if FF_MCP_ENABLED:
     print("MCP Mode: Enabled. Connecting to customer_mcp_server...", file=sys.stderr)
     
     final_instructions += (
