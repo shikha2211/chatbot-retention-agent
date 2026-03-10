@@ -1,70 +1,55 @@
-# Execution Guide: Customer Retention Agent (v1.25.1)
+🧪 MCP Testing Guide: Retention Agent
+This project uses the Model Context Protocol (MCP) to decouple the AI Agent from its data sources. The Agent (Port 9000) communicates with the Customer Data Server (Port 8000) via HTTP/SSE.
 
-This project uses a modular architecture where the **AI Agent** lives in the `services/` folder and the **MCP Tools** live in the `customer_mcp_server/` folder. A **Feature Flag** is used to toggle MCP functionality.
+🛠️ Prerequisites
+Python 3.11+ with a virtual environment (.venv) activated.
+Node.js installed for the Frontend UI.
+All environment variables (.env) configured with GOOGLE_API_KEY
+FF_MCP_ENABLED = True in config.py
 
----
+🚀 The "Terminal Trio" Startup Sequence
+To test the full loop, you must start the services in this specific order to ensure the MCP Handshake succeeds.
 
-## 🚀 1. Pre-requisites & Configuration
+Terminal 1: The MCP Tool Server (Port 8000)
+This provides the data-fetching tools for Gemini.
+cd customer_mcp_server
+python3 mcp_tools.py
 
-Before running any component, ensure your environment is set up:
+Wait for: Uvicorn running on http://127.0.0.1:8000
 
-1.  **Activate Environment:** `source .venv/bin/activate`
-2.  **Set Python Path:** `export PYTHONPATH=$(pwd)`
-3.  **Configure Feature Flag:** Open the `.env` file in the root directory and set:
-    *   `FF_MCP_ENABLED=true` (To enable MCP tools like customer_data_by_id)
-    *   `FF_MCP_ENABLED=false` (To use only local tools)
+Terminal 2: The Agent Backend (Port 9000)
+This is the "Brain" that orchestrates Gemini and the MCP Bridge.
+# From the root directory
+python3 start_server.py 
+Wait for: mcp_toolset <google.adk.tools.mcp_tool...> (Confirms HTTP Bridge is active).
 
-> **Note:** If you change the `FF_MCP_ENABLED` value, you **must restart** the ADK or Uvicorn server for the changes to take effect.
+Terminal 3: The Chat UI inside chatbot-chat-interface (Port 3000)
+npm run start
+Access: Open http://localhost:3000 in your browser.
 
----
 
-## 🌐 2. Steps to Run the Tools API (Browser Testing)
-This starts the **FastAPI** server on Port 8080 for manual verification of customer data.
+📝 Test Scenarios & Prompts
 
-1.  **Terminal:** Stay in the project root `chatbot-retention-agent/`.
-2.  **Run Command:**
-    ```bash
-    python -m uvicorn customer_mcp_server.main:app --host 127.0.0.1 --port 8080 --reload
-    ```
-3.  **Browser Tests (Port 8080):**
-    *   **Interactive Docs (Swagger):** [http://127.0.0.1](http://127.0.0.1)
-    *   **Customer Lookup:** [http://127.0.0.1](http://127.0.0.1)
+Test 1: Tool Discovery (The Handshake)
+Prompt: "What tools do you currently have access to?"
+Verification: The Agent should list customer_data_by_id, customer_data_text, and system_health_status.
+Success: This proves the SseConnectionParams bridge is successfully reading the MCP server's manifest.
 
----
+Test 2: Live CRM Lookup (MCP Tool)
+Prompt: "Please fetch all details for CUST_0009"
+Backend Log: Look at Terminal 1. You should see Processing request of type CallToolRequest.
+Success: The UI displays live Sector, Products, and Churn Risk data from the MockAPI.
 
-## 🤖 3. Steps to Run the ADK Agent (AI Chat)
-This starts the **Google Agent Development Kit** on Port 8000.
+Test 3: Multi-Tool Reasoning (MCP + RAG)
+Prompt: "Get details for CUST_0010 and then suggest a retention strategy."
+Success: The Agent fetches the profile via MCP (Port 8000) and then automatically triggers the StrategyRetrievalTool to provide an AI-driven plan.
 
-1.  **Terminal:** Open a new tab in the project root `chatbot-retention-agent/`.
-2.  **Run Command:**
-    ```bash
-    adk web .
-    ```
-3.  **AI Chat Test (Port 8000):**
-    *   Open [http://localhost:8000](http://localhost:8000) in your browser.
-    *   **Dropdown Selection:** Select **`services`** from the agent dropdown.
-    *   **Verify MCP:** Look for the log `🛠️ MCP Mode: Enabled` in your terminal.
-    *   **Try asking:** *"Who are my top 3 spenders?"* or *"What is the status of customer CUST_0001?"*
+⚠️ Troubleshooting
+Error	                            Fix
+ADK agent not available	            Ensure services/agent.py uses SseConnectionParams pointing to 
+                                    http://127.0.0.1.
 
----
-
-## 🛠️ Troubleshooting Checklist
-
-*   **"No root_agent found for 'services'":** Ensure your agent code is in `services/agent.py` and the variable is named exactly `root_agent`.
-*   **"Address already in use" (Errno 48):** Run `lsof -ti:8080 | xargs kill -9` to clear the port.
-*   **"ModuleNotFoundError":** This usually means the `export PYTHONPATH=$(pwd)` was missed in the current terminal session.
-*   **"Attempted to exit cancel scope":** This means `mcp_tools.py` crashed. Ensure `agent.py` has the correct `cwd` and `env: {"PYTHONPATH": ".."}` settings.
-*   **MCP Tools not appearing:** Ensure `FF_MCP_ENABLED=true` is set in `.env` and you have restarted the `adk web .` command.
-
----
-
-## Project Structure
-```text
-chatbot-retention-agent/
-├── .env                # Global configuration & Feature Flags
-├── services/           # AI Agent (Auto-loaded by ADK)
-│   └── agent.py        # Main Agent logic
-└── customer_mcp_server/# Tool Provider (Shared by API and Agent)
-    ├── main.py         # Entry point for Browser API
-    ├── mcp_tools.py    # Entry point for ADK Stdio
-    └── mcp_functions.py# Core data logic
+Connection Refused	                Check if Terminal 1 is running. Ensure no other app is 
+                                    using Port 8000.
+Empty Response in UI	            Ensure your async for loop in the chat router is capturing 
+                                    event.text (the summary Gemini writes after tool execution).
