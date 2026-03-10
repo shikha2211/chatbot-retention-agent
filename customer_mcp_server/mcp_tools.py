@@ -35,5 +35,8 @@ async def customer_data_text(text: str):
 if __name__ == "__main__":
     print("🚀 Customer MCP Server (Stdio) is starting...", file=sys.stderr)
     # FastMCP starts its own event loop here
-    mcp.run()
+    # mcp.run()
+    # Change transport from "stdio" to "sse"
+    # This will start a web server (usually on port 8000)
+    mcp.run(transport="sse")
 

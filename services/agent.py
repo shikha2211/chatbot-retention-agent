@@ -6,12 +6,16 @@ from tools import CustomerDataTool, StrategyRetrievalTool
 from common import create_retention_agent
 # Import the MCP Bridge classes
 from google.adk.tools.mcp_tool import McpToolset
-from google.adk.tools.mcp_tool.mcp_toolset import StdioConnectionParams
+# from google.adk.tools.mcp_tool.mcp_toolset import StdioConnectionParams
+from google.adk.tools.mcp_tool.mcp_toolset import SseConnectionParams
 from dotenv import load_dotenv
 from google.genai import types
 from agent_prompt import instructionsForAgent
 import warnings
 import logging
+
+# CHANGE: Import FF_MCP_ENABLED from config.py instead of using os.getenv
+from config import FF_MCP_ENABLED
 
 warnings.filterwarnings("ignore")
 logging.basicConfig(level=logging.ERROR)
@@ -22,7 +26,8 @@ APP_NAME = "Retention_Agent"
 
 load_dotenv()
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
-FF_MCP_ENABLED = os.getenv('FF_MCP_ENABLED', 'false').lower() == 'true'
+
+# FF_MCP_ENABLED = os.getenv('FF_MCP_ENABLED', 'false').lower() == 'true'
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
@@ -42,15 +47,20 @@ if FF_MCP_ENABLED:
         "over any other similar tools when FF_MCP_ENABLED is true."
     )
 
-    mcp_connection = StdioConnectionParams(
-        server_params={
-            "command": "python3",
-            "args": ["mcp_tools.py"],
-            # Since agent.py is now in /services, we go up and into the tool folder
-            "cwd": os.path.join(os.path.dirname(__file__), "..", "customer_mcp_server"),
-            # Ensure the tool process can see the root package
-            "env": {"PYTHONPATH": "."}
-        }
+    # mcp_connection = StdioConnectionParams(
+    #     server_params={
+    #         "command": "python3",
+    #         "args": ["mcp_tools.py"],
+    #         # Since agent.py is now in /services, we go up and into the tool folder
+    #         "cwd": os.path.join(os.path.dirname(__file__), "..", "customer_mcp_server"),
+    #         # Ensure the tool process can see the root package
+    #         "env": {"PYTHONPATH": "."}
+    #     }
+    # )
+
+    # Replace Stdio with HTTP
+    mcp_connection = SseConnectionParams(
+        url="http://localhost:8000/sse"  # The SSE endpoint of your MCP server
     )
     # Wrap the connection in a toolset and add to the list
     mcp_toolset = McpToolset(connection_params=mcp_connection)
