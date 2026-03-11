@@ -71,8 +71,15 @@ async def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
         """Retrieves RAG-based strategies"""
         try:
                 print(f'\n\n===>inside new StrategyRetrievalTool context is: {customerData}')
-                # Convert Pydantic model to dict for query_zilliz_milvus_service
-                customer_dict = customerData.model_dump()
+                # FIX: Check if it's a Pydantic model or already a dict
+                if hasattr(customerData, 'model_dump'):
+                     customer_dict = customerData.model_dump()
+                elif isinstance(customerData, dict):
+                     customer_dict = customerData
+                else:
+                     # Fallback if it's some other type
+                     customer_dict = dict(customerData)
+                 # Now pass the clean dictionary to Milvus service     
                 results = query_zilliz_milvus_service(customer_dict)
                 return results
         

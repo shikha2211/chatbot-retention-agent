@@ -105,20 +105,33 @@ async def chat_with_agent(request: ChatRequest):
 
         print(f"\nExecuting Agent now with user_id: {user_id} , sessionId : {session_id} and message: {new_message} ")
         
-        # Run the ADK agent
-        # =================
-        response_events = list(
-            runner.run(user_id=user_id, session_id=session_id, new_message=new_message)
-        )
 
-        # Extract the response from the events
+        # Run the ADK agent asynchronously
         response_text = ""
-        for event in response_events:
-            # print(f'\n ===> response event from agent {event}')
-            if hasattr(event, "content") and hasattr(event.content, "parts"):
-                for part in event.content.parts:
-                    if hasattr(part, "text") and isinstance(part.text, str) :
-                        response_text += part.text
+        try:
+            async for event in runner.run_async(
+                user_id=user_id, 
+                session_id=session_id, 
+                new_message=new_message
+            ):
+                print(f"DEBUG Event: {event}")
+                # Check if the event has content and parts
+                if hasattr(event, "content") and event.content.parts:
+                    for part in event.content.parts:
+                        # 1. Capture direct text
+                        if hasattr(part, "text") and part.text:
+                            response_text += part.text
+                        
+                        # 2. Capture tool results if the model summarizes them
+                        # Sometimes the final response is in a different event type
+                        # depending on the ADK version.
+                # 3. Handle model response events specifically
+                elif hasattr(event, "text") and event.text:
+                    response_text += event.text
+
+        except Exception as e:
+            logging.error(f"ADK Async Runner Error: {e}")
+            response_text = f"An error occurred: {str(e)}"
 
         if not response_text:
             response_text = "I received your message but couldn't generate a response."
