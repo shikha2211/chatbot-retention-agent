@@ -14,11 +14,10 @@ MONGO_URI = os.getenv("MONGO_URI")
 
 if MONGO_URI is None or "localhost" in MONGO_URI:
     MONGO_URI="mongodb+srv://admin:retention-db-connect@retention-agent-db.xz7rajn.mongodb.net/?retryWrites=true&w=majority"
-
 client = MongoClient(MONGO_URI)
 
 db = client["retention_db"]
-collection = db["portfolio_data"]
+collection = db["portfolio_data_actions"]
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -91,10 +90,8 @@ class PortfolioWebSocketManager:
         
     def _watch_changes(self):
         try:
-            # Watch for changes in the portfolio_data collection
-            # Use fullDocumentBeforeChange to capture rmId before deletion
-            pipeline = [{'$match': {'operationType': {'$in': ['insert', 'update', 'replace', 'delete']}}}]
-            with collection.watch(pipeline, full_document_before_change='whenAvailable') as stream:
+            # Watch for changes in the portfolio_data_actions collection
+            with collection.watch() as stream:
                 for change in stream:
                     if not self.change_stream_active:
                         break
@@ -149,7 +146,10 @@ class PortfolioWebSocketManager:
 def get_portfolio_for_user(user_id: str) -> Dict[str, list]:
     """ Fetch all customers for a given rmId/userId and categorize by churn risk. """
 
-    documents = collection.find({"rmId": user_id})
+    documents = list(collection.find({"relationshipManager.managerId": user_id}))
+    print("Documents-----------:")
+    for doc in documents:
+        print(doc)
 
     if not documents:
         return {}
@@ -157,13 +157,32 @@ def get_portfolio_for_user(user_id: str) -> Dict[str, list]:
     categorized = {"High": [], "Medium": [], "Low": []}
 
     for doc in documents:
-        risk = doc.get("churnRiskCategory", "Unknown")
+        risk_profile = doc.get("riskProfile", {})
+        risk = risk_profile.get("riskLevel", "Unknown")
+        
+        # Find the action that matches lastActionId
+        last_action = {}
+        last_action_id = doc.get("lastActionId")
+        if last_action_id and "actions" in doc:
+            last_action = next(
+                (action for action in doc["actions"] if action.get("actionId") == last_action_id),
+                {}
+            )
+        
         item = {
             "customerId": doc.get("customerId"),
-            "name": doc.get("name"),
-            "lastActionTaken": doc.get("lastActionTaken"),
-            "lastActionDate": doc.get("lastActionDate"),
-            "nextRecommendedStep": doc.get("nextStepRecommendation")
+            "name": doc.get("customerName"),
+            "lastAction": {
+                "actionId": last_action_id,
+                "actionType": last_action.get("actionType"),
+                "details": last_action.get("actionDetails", {}),
+                "status": last_action.get("status"),
+                "outcome": last_action.get("outcome"),
+                "takenOn": last_action.get("takenOn"),
+                "takenBy": last_action.get("takenBy")
+            },
+            "lastActionDate": doc.get("lastActionTakenOn"),
+            # "nextRecommendedStep": doc.get("nextStepRecommendation")
         }
         categorized.setdefault(risk, []).append(item)
 
@@ -175,10 +194,22 @@ def get_portfolio_for_user(user_id: str) -> Dict[str, list]:
 def create_portfolio_entry(portfolio_data: dict) -> dict:
     """Create a new portfolio entry in MongoDB."""
     try:
+        # print("\n=== New Portfolio Entry ===")
+        # print("Portfolio Data:", portfolio_data)
+        
+        # Print all documents in the collection
+        all_docs = list(collection.find({}))
+        print(f"\n=== Collection Contents ({len(all_docs)} documents) ===")
+        for i, doc in enumerate(all_docs, 1):
+            print(f"\nDocument {i}:")
+            for key, value in doc.items():
+                print(f"  {key}: {value}")
+        print("\n" + "="*50 + "\n")
+        
         # Check if customer ID already exists for this RM
         existing = collection.find_one({
             "customerId": portfolio_data.get("customerId"),
-            "rmId": portfolio_data.get("rmId")
+            "rmId": portfolio_data.get("relationshipManager.managerId")
         })
         
         if existing:
