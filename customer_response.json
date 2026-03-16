@@ -22,7 +22,9 @@
     "churnRiskScore": "0.77",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Superior mobile banking app experience, Competitor offering 0% credit card balance transfer, Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Pricing, Experience, Cash Flow Stress"
+    "churnReasonTags": "Pricing, Experience, Cash Flow Stress",
+    "email": "shipra.joshi18@outlook.com",
+    "mobileNumber": "+1-555-000-0001"
   },
   {
     "customerId": "CUST0002",
@@ -47,7 +49,9 @@
     "churnRiskScore": "0.27",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Superior mobile banking app experience",
-    "churnReasonTags": "Experience"
+    "churnReasonTags": "Experience",
+    "email": "contactCUST0002@example.com",
+    "mobileNumber": "+1-555-000-0002"
   },
   {
     "customerId": "CUST_0003",
@@ -72,7 +76,9 @@
     "churnRiskScore": "0.81",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Declining revenue and better working capital support offered elsewhere, Competitor offering 0% credit card balance transfer",
-    "churnReasonTags": "Pricing, Cash Flow Stress"
+    "churnReasonTags": "Pricing, Cash Flow Stress",
+    "email": "contactCUST_0003@example.com",
+    "mobileNumber": "+1-555-000-0003"
   },
   {
     "customerId": "CUST_0004",
@@ -97,7 +103,9 @@
     "churnRiskScore": "0.36",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Relationship manager unresponsive to service requests, More favorable repayment terms at alternative lender, Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Service Quality, Cash Flow Stress"
+    "churnReasonTags": "Service Quality, Cash Flow Stress",
+    "email": "contactCUST_0004@example.com",
+    "mobileNumber": "+1-555-000-0004"
   },
   {
     "customerId": "CUST_0005",
@@ -122,7 +130,9 @@
     "churnRiskScore": "0.33",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Relationship manager unresponsive to service requests",
-    "churnReasonTags": "Service Quality"
+    "churnReasonTags": "Service Quality",
+    "email": "contactCUST_0005@example.com",
+    "mobileNumber": "+1-555-000-0005"
   },
   {
     "customerId": "CUST_0006",
@@ -147,7 +157,9 @@
     "churnRiskScore": "0.64",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Faster loan approvals at fintech lender, Better API integrations for current account accounting, Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Speed/Convenience, Cash Flow Stress, Product Features"
+    "churnReasonTags": "Speed/Convenience, Cash Flow Stress, Product Features",
+    "email": "contactCUST_0006@example.com",
+    "mobileNumber": "+1-555-000-0006"
   },
   {
     "customerId": "CUST_0007",
@@ -172,7 +184,9 @@
     "churnRiskScore": "0.8",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Superior mobile banking app experience, Competitor offering 0% credit card balance transfer, Lower overdraft fees at competitor bank",
-    "churnReasonTags": "Pricing, Experience"
+    "churnReasonTags": "Pricing, Experience",
+    "email": "contactCUST_0007@example.com",
+    "mobileNumber": "+1-555-000-0007"
   },
   {
     "customerId": "CUST_0008",
@@ -197,7 +211,9 @@
     "churnRiskScore": "0.58",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Competitor offering 0% credit card balance transfer, Superior mobile banking app experience",
-    "churnReasonTags": "Pricing, Experience"
+    "churnReasonTags": "Pricing, Experience",
+    "email": "contactCUST_0008@example.com",
+    "mobileNumber": "+1-555-000-0008"
   },
   {
     "customerId": "CUST_0009",
@@ -222,7 +238,9 @@
     "churnRiskScore": "0.45",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "More favorable repayment terms at alternative lender, Accounting software integration missing compared to competitor, Delayed cash flow impacting overdraft needs",
-    "churnReasonTags": "Cash Flow Stress, Product Features"
+    "churnReasonTags": "Cash Flow Stress, Product Features",
+    "email": "contactCUST_0009@example.com",
+    "mobileNumber": "+1-555-000-0009"
   },
   {
     "customerId": "CUST_0010",
@@ -247,7 +265,9 @@
     "churnRiskScore": "0.94",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Lower overdraft fees at competitor bank",
-    "churnReasonTags": "Pricing"
+    "churnReasonTags": "Pricing",
+    "email": "contactCUST_0010@example.com",
+    "mobileNumber": "+1-555-000-0010"
   },
   {
     "customerId": "CUST_0011",
@@ -272,7 +292,9 @@
     "churnRiskScore": "0.63",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Better API integrations for current account accounting, Competitor offering 0% credit card balance transfer, Superior mobile banking app experience",
-    "churnReasonTags": "Pricing, Experience, Product Features"
+    "churnReasonTags": "Pricing, Experience, Product Features",
+    "email": "contactCUST_0011@example.com",
+    "mobileNumber": "+1-555-000-0011"
   },
   {
     "customerId": "CUST_0012",
@@ -297,7 +319,9 @@
     "churnRiskScore": "0.39",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor, Better API integrations for current account accounting",
-    "churnReasonTags": "Product Features"
+    "churnReasonTags": "Product Features",
+    "email": "contactCUST_0012@example.com",
+    "mobileNumber": "+1-555-000-0012"
   },
   {
     "customerId": "CUST_0013",
@@ -322,7 +346,9 @@
     "churnRiskScore": "0.63",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Declining revenue and better working capital support offered elsewhere, Relationship manager unresponsive to service requests",
-    "churnReasonTags": "Service Quality, Cash Flow Stress"
+    "churnReasonTags": "Service Quality, Cash Flow Stress",
+    "email": "contactCUST_0013@example.com",
+    "mobileNumber": "+1-555-000-0013"
   },
   {
     "customerId": "CUST_0014",
@@ -347,7 +373,9 @@
     "churnRiskScore": "0.87",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Faster loan approvals at fintech lender, Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Speed/Convenience, Cash Flow Stress"
+    "churnReasonTags": "Speed/Convenience, Cash Flow Stress",
+    "email": "contactCUST_0014@example.com",
+    "mobileNumber": "+1-555-000-0014"
   },
   {
     "customerId": "CUST_0015",
@@ -372,7 +400,9 @@
     "churnRiskScore": "0.1",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Faster loan approvals at fintech lender",
-    "churnReasonTags": "Speed/Convenience"
+    "churnReasonTags": "Speed/Convenience",
+    "email": "contactCUST_0015@example.com",
+    "mobileNumber": "+1-555-000-0015"
   },
   {
     "customerId": "CUST_0016",
@@ -397,7 +427,9 @@
     "churnRiskScore": "0.71",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Lower overdraft fees at competitor bank, Superior mobile banking app experience",
-    "churnReasonTags": "Pricing, Experience"
+    "churnReasonTags": "Pricing, Experience",
+    "email": "contactCUST_0016@example.com",
+    "mobileNumber": "+1-555-000-0016"
   },
   {
     "customerId": "CUST_0017",
@@ -422,7 +454,9 @@
     "churnRiskScore": "0.07",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Declining revenue and better working capital support offered elsewhere, Superior mobile banking app experience",
-    "churnReasonTags": "Experience, Cash Flow Stress"
+    "churnReasonTags": "Experience, Cash Flow Stress",
+    "email": "contactCUST_0017@example.com",
+    "mobileNumber": "+1-555-000-0017"
   },
   {
     "customerId": "CUST_0018",
@@ -447,7 +481,9 @@
     "churnRiskScore": "0.21",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Competitor offering 0% credit card balance transfer, Better API integrations for current account accounting, Delayed cash flow impacting overdraft needs",
-    "churnReasonTags": "Pricing, Cash Flow Stress, Product Features"
+    "churnReasonTags": "Pricing, Cash Flow Stress, Product Features",
+    "email": "contactCUST_0018@example.com",
+    "mobileNumber": "+1-555-000-0018"
   },
   {
     "customerId": "CUST_0019",
@@ -472,7 +508,9 @@
     "churnRiskScore": "0.91",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Delayed cash flow impacting overdraft needs",
-    "churnReasonTags": "Cash Flow Stress"
+    "churnReasonTags": "Cash Flow Stress",
+    "email": "contactCUST_0019@example.com",
+    "mobileNumber": "+1-555-000-0019"
   },
   {
     "customerId": "CUST_0020",
@@ -497,7 +535,9 @@
     "churnRiskScore": "0.77",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Superior mobile banking app experience, Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Experience, Cash Flow Stress"
+    "churnReasonTags": "Experience, Cash Flow Stress",
+    "email": "contactCUST_0020@example.com",
+    "mobileNumber": "+1-555-000-0020"
   },
   {
     "customerId": "CUST_0021",
@@ -522,7 +562,9 @@
     "churnRiskScore": "0.31",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Competitor offering 0% credit card balance transfer, Better API integrations for current account accounting, Faster loan approvals at fintech lender",
-    "churnReasonTags": "Pricing, Speed/Convenience, Product Features"
+    "churnReasonTags": "Pricing, Speed/Convenience, Product Features",
+    "email": "contactCUST_0021@example.com",
+    "mobileNumber": "+1-555-000-0021"
   },
   {
     "customerId": "CUST_0022",
@@ -547,7 +589,9 @@
     "churnRiskScore": "0.75",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Declining revenue and better working capital support offered elsewhere, Faster loan approvals at fintech lender, Competitor offering 0% credit card balance transfer",
-    "churnReasonTags": "Pricing, Speed/Convenience, Cash Flow Stress"
+    "churnReasonTags": "Pricing, Speed/Convenience, Cash Flow Stress",
+    "email": "contactCUST_0022@example.com",
+    "mobileNumber": "+1-555-000-0022"
   },
   {
     "customerId": "CUST_0023",
@@ -572,7 +616,9 @@
     "churnRiskScore": "0.96",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Higher deposit rates offered by competitor, Delayed cash flow impacting overdraft needs",
-    "churnReasonTags": "Pricing, Cash Flow Stress"
+    "churnReasonTags": "Pricing, Cash Flow Stress",
+    "email": "contactCUST_0023@example.com",
+    "mobileNumber": "+1-555-000-0023"
   },
   {
     "customerId": "CUST_0024",
@@ -597,7 +643,9 @@
     "churnRiskScore": "0.01",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Superior mobile banking app experience",
-    "churnReasonTags": "Experience"
+    "churnReasonTags": "Experience",
+    "email": "contactCUST_0024@example.com",
+    "mobileNumber": "+1-555-000-0024"
   },
   {
     "customerId": "CUST_0025",
@@ -622,7 +670,9 @@
     "churnRiskScore": "0.49",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Superior mobile banking app experience, Higher deposit rates offered by competitor, Delayed cash flow impacting overdraft needs",
-    "churnReasonTags": "Pricing, Experience, Cash Flow Stress"
+    "churnReasonTags": "Pricing, Experience, Cash Flow Stress",
+    "email": "contactCUST_0025@example.com",
+    "mobileNumber": "+1-555-000-0025"
   },
   {
     "customerId": "CUST_0026",
@@ -647,7 +697,9 @@
     "churnRiskScore": "0.61",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Superior mobile banking app experience, Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Experience, Product Features"
+    "churnReasonTags": "Experience, Product Features",
+    "email": "contactCUST_0026@example.com",
+    "mobileNumber": "+1-555-000-0026"
   },
   {
     "customerId": "CUST_0027",
@@ -672,7 +724,9 @@
     "churnRiskScore": "0.8",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Product Features"
+    "churnReasonTags": "Product Features",
+    "email": "contactCUST_0027@example.com",
+    "mobileNumber": "+1-555-000-0027"
   },
   {
     "customerId": "CUST_0028",
@@ -697,7 +751,9 @@
     "churnRiskScore": "0.2",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Declining revenue and better working capital support offered elsewhere",
-    "churnReasonTags": "Cash Flow Stress"
+    "churnReasonTags": "Cash Flow Stress",
+    "email": "contactCUST_0028@example.com",
+    "mobileNumber": "+1-555-000-0028"
   },
   {
     "customerId": "CUST_0029",
@@ -722,7 +778,9 @@
     "churnRiskScore": "0.97",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Faster loan approvals at fintech lender",
-    "churnReasonTags": "Speed/Convenience"
+    "churnReasonTags": "Speed/Convenience",
+    "email": "contactCUST_0029@example.com",
+    "mobileNumber": "+1-555-000-0029"
   },
   {
     "customerId": "CUST_0030",
@@ -747,7 +805,9 @@
     "churnRiskScore": "0.32",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Relationship manager unresponsive to service requests, More favorable repayment terms at alternative lender",
-    "churnReasonTags": "Service Quality"
+    "churnReasonTags": "Service Quality",
+    "email": "contactCUST_0030@example.com",
+    "mobileNumber": "+1-555-000-0030"
   },
   {
     "customerId": "CUST_0031",
@@ -772,7 +832,9 @@
     "churnRiskScore": "0.05",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Higher deposit rates offered by competitor, Lower overdraft fees at competitor bank, Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Pricing, Product Features"
+    "churnReasonTags": "Pricing, Product Features",
+    "email": "contactCUST_0031@example.com",
+    "mobileNumber": "+1-555-000-0031"
   },
   {
     "customerId": "CUST_0032",
@@ -797,7 +859,9 @@
     "churnRiskScore": "0.55",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Product Features"
+    "churnReasonTags": "Product Features",
+    "email": "contactCUST_0032@example.com",
+    "mobileNumber": "+1-555-000-0032"
   },
   {
     "customerId": "CUST_0033",
@@ -822,7 +886,9 @@
     "churnRiskScore": "0.51",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Delayed cash flow impacting overdraft needs, More favorable repayment terms at alternative lender",
-    "churnReasonTags": "Cash Flow Stress"
+    "churnReasonTags": "Cash Flow Stress",
+    "email": "contactCUST_0033@example.com",
+    "mobileNumber": "+1-555-000-0033"
   },
   {
     "customerId": "CUST_0034",
@@ -847,7 +913,9 @@
     "churnRiskScore": "0.14",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Product Features"
+    "churnReasonTags": "Product Features",
+    "email": "contactCUST_0034@example.com",
+    "mobileNumber": "+1-555-000-0034"
   },
   {
     "customerId": "CUST_0035",
@@ -872,7 +940,9 @@
     "churnRiskScore": "1.0",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Competitor offering 0% credit card balance transfer, More favorable repayment terms at alternative lender",
-    "churnReasonTags": "Pricing"
+    "churnReasonTags": "Pricing",
+    "email": "contactCUST_0035@example.com",
+    "mobileNumber": "+1-555-000-0035"
   },
   {
     "customerId": "CUST_0036",
@@ -897,7 +967,9 @@
     "churnRiskScore": "0.38",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Delayed cash flow impacting overdraft needs, Faster loan approvals at fintech lender, Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Speed/Convenience, Cash Flow Stress, Product Features"
+    "churnReasonTags": "Speed/Convenience, Cash Flow Stress, Product Features",
+    "email": "contactCUST_0036@example.com",
+    "mobileNumber": "+1-555-000-0036"
   },
   {
     "customerId": "CUST_0037",
@@ -922,7 +994,9 @@
     "churnRiskScore": "0.94",
     "churnRiskCategory": "High",
     "primaryChurnReasons": "Faster loan approvals at fintech lender, Higher deposit rates offered by competitor",
-    "churnReasonTags": "Pricing, Speed/Convenience"
+    "churnReasonTags": "Pricing, Speed/Convenience",
+    "email": "contactCUST_0037@example.com",
+    "mobileNumber": "+1-555-000-0037"
   },
   {
     "customerId": "CUST_0038",
@@ -947,7 +1021,9 @@
     "churnRiskScore": "0.43",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Relationship manager unresponsive to service requests",
-    "churnReasonTags": "Service Quality"
+    "churnReasonTags": "Service Quality",
+    "email": "contactCUST_0038@example.com",
+    "mobileNumber": "+1-555-000-0038"
   },
   {
     "customerId": "CUST_0039",
@@ -972,7 +1048,9 @@
     "churnRiskScore": "0.67",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Faster loan approvals at fintech lender, Accounting software integration missing compared to competitor, Relationship manager unresponsive to service requests",
-    "churnReasonTags": "Service Quality, Speed/Convenience, Product Features"
+    "churnReasonTags": "Service Quality, Speed/Convenience, Product Features",
+    "email": "contactCUST_0039@example.com",
+    "mobileNumber": "+1-555-000-0039"
   },
   {
     "customerId": "CUST_0040",
@@ -997,7 +1075,9 @@
     "churnRiskScore": "0.28",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor, Delayed cash flow impacting overdraft needs, Higher deposit rates offered by competitor",
-    "churnReasonTags": "Pricing, Cash Flow Stress, Product Features"
+    "churnReasonTags": "Pricing, Cash Flow Stress, Product Features",
+    "email": "contactCUST_0040@example.com",
+    "mobileNumber": "+1-555-000-0040"
   },
   {
     "customerId": "CUST_0041",
@@ -1022,7 +1102,9 @@
     "churnRiskScore": "0.28",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Better API integrations for current account accounting, Relationship manager unresponsive to service requests",
-    "churnReasonTags": "Service Quality, Product Features"
+    "churnReasonTags": "Service Quality, Product Features",
+    "email": "contactCUST_0041@example.com",
+    "mobileNumber": "+1-555-000-0041"
   },
   {
     "customerId": "CUST_0042",
@@ -1047,7 +1129,9 @@
     "churnRiskScore": "0.43",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Faster loan approvals at fintech lender, Higher deposit rates offered by competitor",
-    "churnReasonTags": "Pricing, Speed/Convenience"
+    "churnReasonTags": "Pricing, Speed/Convenience",
+    "email": "contactCUST_0042@example.com",
+    "mobileNumber": "+1-555-000-0042"
   },
   {
     "customerId": "CUST_0043",
@@ -1072,7 +1156,9 @@
     "churnRiskScore": "0.48",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Higher deposit rates offered by competitor, Better API integrations for current account accounting, Superior mobile banking app experience",
-    "churnReasonTags": "Pricing, Experience, Product Features"
+    "churnReasonTags": "Pricing, Experience, Product Features",
+    "email": "contactCUST_0043@example.com",
+    "mobileNumber": "+1-555-000-0043"
   },
   {
     "customerId": "CUST_0044",
@@ -1097,7 +1183,9 @@
     "churnRiskScore": "0.22",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Competitor offering 0% credit card balance transfer",
-    "churnReasonTags": "Pricing"
+    "churnReasonTags": "Pricing",
+    "email": "contactCUST_0044@example.com",
+    "mobileNumber": "+1-555-000-0044"
   },
   {
     "customerId": "CUST_0045",
@@ -1122,7 +1210,9 @@
     "churnRiskScore": "0.57",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Higher deposit rates offered by competitor, Accounting software integration missing compared to competitor",
-    "churnReasonTags": "Pricing, Product Features"
+    "churnReasonTags": "Pricing, Product Features",
+    "email": "contactCUST_0045@example.com",
+    "mobileNumber": "+1-555-000-0045"
   },
   {
     "customerId": "CUST_0046",
@@ -1147,7 +1237,9 @@
     "churnRiskScore": "0.6",
     "churnRiskCategory": "Medium",
     "primaryChurnReasons": "Lower overdraft fees at competitor bank",
-    "churnReasonTags": "Pricing"
+    "churnReasonTags": "Pricing",
+    "email": "contactCUST_0046@example.com",
+    "mobileNumber": "+1-555-000-0046"
   },
   {
     "customerId": "CUST_0047",
@@ -1172,7 +1264,9 @@
     "churnRiskScore": "0.25",
     "churnRiskCategory": "Low",
     "primaryChurnReasons": "Accounting software integration missing compared to competitor, More favorable repayment terms at alternative lender, Competitor offering 0% credit card balance transfer",
-    "churnReasonTags": "Pricing, Product Features"
+    "churnReasonTags": "Pricing, Product Features",
+    "email": "contactCUST_0047@example.com",
+    "mobileNumber": "+1-555-000-0047"
   },
   {
     "industrySector": "industrySector 1",
@@ -1189,7 +1283,9 @@
     "digitalEngagementScore": "digitalEngagementScore 1",
     "satisfactionScore": "satisfactionScore 1",
     "relationshipManagerEngagementScore": "relationshipManagerEngagementScore 1",
-    "customerId": "1"
+    "customerId": "1",
+    "email": "contact1@example.com",
+    "mobileNumber": "+1-555-000-48"
   },
   {
     "industrySector": "industrySector 2",
@@ -1206,7 +1302,9 @@
     "digitalEngagementScore": "digitalEngagementScore 2",
     "satisfactionScore": "satisfactionScore 2",
     "relationshipManagerEngagementScore": "relationshipManagerEngagementScore 2",
-    "customerId": "2"
+    "customerId": "2",
+    "email": "contact2@example.com",
+    "mobileNumber": "+1-555-000-49"
   },
   {
     "industrySector": "industrySector 3",
@@ -1223,6 +1321,8 @@
     "digitalEngagementScore": "digitalEngagementScore 3",
     "satisfactionScore": "satisfactionScore 3",
     "relationshipManagerEngagementScore": "relationshipManagerEngagementScore 3",
-    "customerId": "3"
+    "customerId": "3",
+    "email": "contact3@example.com",
+    "mobileNumber": "+1-555-000-50"
   }
 ]

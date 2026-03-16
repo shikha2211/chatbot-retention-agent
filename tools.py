@@ -5,7 +5,7 @@ from openai import OpenAI
 from dotenv import load_dotenv  # Import load_dotenv
 from typing import Any, Dict
 from google.adk.tools import google_search
-from models import  CustomerProfile
+from models import CustomerProfile
 from services.query_zilliz_milvus_service import query_zilliz_milvus_service
 
 load_dotenv()  # Load environment variables
@@ -13,6 +13,7 @@ load_dotenv()  # Load environment variables
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 CUSTOMER_API_URL = os.getenv('CUSTOMER_API_URL')
 RAG_API_URL = os.getenv('RAG_API_URL')
+IMPLEMENTATION_AGENT_URL = os.getenv('IMPLEMENTATION_AGENT_URL', '').rstrip('/')
 
 async def CustomerDataTool(customer_id: str) -> Dict[str, Any]:
         """Fetches customer details"""
@@ -90,3 +91,34 @@ async def StrategyRetrievalTool(customerData: CustomerProfile) -> dict:
 
 def health_check_tool() -> dict:
     return {"status": "healthy"}
+# [TODO:] remove later
+async def ImplementStrategyTool(
+    customer_id: str,
+    retention_strategy_id: str,
+    rm_id: str = "",
+    strategy_name: str = "",
+) -> Dict[str, Any]:
+    """Calls the Implementation Agent with customerId, retentionStrategyId, and rmId."""
+    customer_id = (customer_id or "").strip().upper()
+    retention_strategy_id = (retention_strategy_id or "").strip().upper()
+    rm_id = (rm_id or "").strip().upper()
+
+    print(f"\n\n===>ImplementStrategyTool: customer={customer_id}, strategy={retention_strategy_id}, rm={rm_id}, name={strategy_name}")
+
+    if not IMPLEMENTATION_AGENT_URL:
+        print("\n\n===>ImplementStrategyTool: IMPLEMENTATION_AGENT_URL not set, skipping call")
+        return {"status": "success", "message": f"Strategy {retention_strategy_id} queued for customer {customer_id} (impl agent not configured)."}
+
+    payload = {
+        "customerId": customer_id,
+        "retentionStrategyId": retention_strategy_id,
+        "rmId": rm_id,
+        "strategyName": strategy_name or None,
+    }
+    try:
+        resp = requests.post(IMPLEMENTATION_AGENT_URL, json=payload, timeout=30)
+        resp.raise_for_status()
+        return resp.json()
+    except requests.exceptions.RequestException as e:
+        print(f"\n\n===>ERROR: ImplementStrategyTool call failed: {e}")
+        return {"status": "error", "message": str(e)}

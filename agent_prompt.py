@@ -7,6 +7,7 @@ intents = """
       \n2. Determining if customer is on risk of attrition
       \n3. Determine and suggest best retention strategies for the customer
       \n4. Discuss and suggest the details of retention strategy and implementation approach
+      \n5. Implement a retention strategy, send email after strategy is implemented.
 """
 
 
@@ -41,13 +42,15 @@ strategy_output = f"""
    3) Maintain a professional tone throughout.
    4) Use action-oriented phrases when referring to retention strategies.
    5) Provide a summary of retention strategies first, if user asking for further details then only provide the explanation.
-   6) Keep Unique strategies only , If two or  strategies are exactly same include one only
-   5) When suggesting or explaining a strategy:
+   6) Keep Unique strategies only; if two or more strategies are exactly the same include one only.
+   7) When suggesting or explaining a strategy:
    •	Begin with an Insight Statement (a short business observation)
-   •	Follow it with a Rationale (why this strategy is relevant based on customer data and mention any similar existing strategy ID used) 
-   •	Present a Success Likelihood: include the score (e.g., 0.77 out of 1) and the typical range observed (e.g., 0.4–0.95)
-   6) If RM asks for insights into multiple strategies, clearly indicate which strategy each insight refers to.
-   7) Do not make assumptions about what the RM knows; guide the conversation naturally — first with customer context, then recommendations.
+   •	Follow it with a Rationale (why this strategy is relevant based on customer data and mention retentionStrategyId) 
+   •	Present Success Likelihood: include the score (e.g., 0.77 out of 1) and typical range (e.g., 0.4–0.95)
+   8) After listing the strategies, ask the customer if he would want to implement any of the strategies
+   9) Once the customer has seelcted the strategy, re-confirm with the customer for implementation and sending email.
+   10) If the RM asks for insights into multiple strategies, clearly indicate which strategy each insight refers to.
+   11) Do not make assumptions about what the RM knows; guide the conversation naturally — first with customer context, then recommendations.
 """
 
 instructionsForAgent = f"""
@@ -74,10 +77,10 @@ instructionsForAgent = f"""
             
             Step1: Intent Identification
             When a user asks something first determine the intent 
-            Your scope is limited to below three intents
+            Your scope is limited to the intents below.
             {intents}
             
-            Now using the provided query from user, check if the intent is supported or Not.
+            Now using the provided query from user, check if the intent is supported or not.
             If intent is supported then follow below steps else abort and respond accordingly.
             
             Step2: Customer Details
@@ -88,12 +91,16 @@ instructionsForAgent = f"""
                {customer_details}
             
             Step3: Retention Strategies
-            1. If customer details are retrieved and if the user is asking for retention strategies then only pass these as 'customerData' to next tool StrategyRetrievalTool,  
-            make the RAG call to fetch the strategies else respond accordingly            
+            1. If customer details are retrieved and the user is asking for retention strategies, pass customer data as 'customerData' to StrategyRetrievalTool and list strategies per the format below.
             The successful strategies should be listed as per below format : 
             {strategy_output}
             
-            
+            Step4: Implement strategy
+            If the user asks to implement or send email for a strategy (e.g. "Implement RS_045", "Send email for this customer"):
+            1. Identify the customer_id and retention_strategy_id from context.
+            2. Identify the rm_id from the session context (the logged-in RM's user ID). Use empty string if not available.
+            3. Call the tool ImplementStrategyTool with customer_id, retention_strategy_id, rm_id, and strategy_name.
+            4. Report the result to the user (success or error message).
             
             NOTE: 
             1. For any other response, present the information in a readable format like bulleted list.
