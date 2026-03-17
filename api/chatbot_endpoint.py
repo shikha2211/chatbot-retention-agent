@@ -94,6 +94,8 @@ async def chat_with_agent(request: ChatRequest):
 
         # Prepare the message for the agent
         message_content = request.message
+        if user_id:
+            message_content += f"\nrmId: {user_id}"
         if request.customer_id:
             message_content += f" Customer ID: {request.customer_id}"
 
