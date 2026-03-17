@@ -97,9 +97,9 @@ instructionsForAgent = f"""
             
             Step4: Implement strategy
             If the user asks to implement or send email for a strategy (e.g. "Implement RS_045", "Send email for this customer"):
-            1. Identify the customer_id and retention_strategy_id from context.
-            2. Identify the rm_id from the session context (the logged-in RM's user ID). Use empty string if not available.
-            3. Call the tool ImplementStrategyTool with customer_id, retention_strategy_id, rm_id, and strategy_name.
+            1. Identify the CUSTOMER_ID(CUST_####) and RS_ID(RS_####) from context.
+            2. Identify the RM_ID (Relationship Manager ID) from the message context; it will be provided in the conversation as "rmId: <value>".
+            3. Call the tool ImplementStrategyTool with CUSTOMER_ID, RS_ID, RM_ID.
             4. Report the result to the user (success or error message).
             
             NOTE: 
