@@ -4,6 +4,7 @@ from google.adk.sessions import InMemorySessionService
 from dotenv import load_dotenv  # Import load_dotenv
 from google.genai import types  # For creating message Content/Parts
 from google.adk.tools import google_search
+from common import create_retention_agent
 from tools import CustomerDataTool, StrategyRetrievalTool, AllCustomersDataTool, ImplementStrategyTool
 from agent_prompt import instructionsForAgent
 import warnings
