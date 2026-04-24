@@ -6,7 +6,6 @@ from tools import CustomerDataTool, StrategyRetrievalTool
 from common import create_retention_agent
 # Import the MCP Bridge classes
 from google.adk.tools.mcp_tool import McpToolset
-# from google.adk.tools.mcp_tool.mcp_toolset import StdioConnectionParams
 from google.adk.tools.mcp_tool.mcp_toolset import SseConnectionParams
 from dotenv import load_dotenv
 from google.genai import types
@@ -27,8 +26,6 @@ APP_NAME = "Retention_Agent"
 load_dotenv()
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
-# FF_MCP_ENABLED = os.getenv('FF_MCP_ENABLED', 'false').lower() == 'true'
-
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
 
@@ -46,25 +43,12 @@ if FF_MCP_ENABLED:
         "Always prefer using 'customer_data_by_id', 'customer_data_text', or 'system_health_status' "
         "over any other similar tools when FF_MCP_ENABLED is true."
     )
-
-    # mcp_connection = StdioConnectionParams(
-    #     server_params={
-    #         "command": "python3",
-    #         "args": ["mcp_tools.py"],
-    #         # Since agent.py is now in /services, we go up and into the tool folder
-    #         "cwd": os.path.join(os.path.dirname(__file__), "..", "customer_mcp_server"),
-    #         # Ensure the tool process can see the root package
-    #         "env": {"PYTHONPATH": "."}
-    #     }
-    # )
-
-    # Replace Stdio with HTTP
     mcp_connection = SseConnectionParams(
         url="http://localhost:8000/sse"  # The SSE endpoint of your MCP server
     )
     # Wrap the connection in a toolset and add to the list
     mcp_toolset = McpToolset(connection_params=mcp_connection)
-    print ("mcp_toolset", mcp_toolset)
+    print("mcp_toolset initialized:", mcp_toolset)
     agent_tools.append(mcp_toolset)
 else:
     print("Local Mode: MCP tools are disabled.", file=sys.stderr)
@@ -75,7 +59,19 @@ root_agent = create_retention_agent(
     instruction=final_instructions,
     description="This agent invokes MCP tools for customer data and strategy retrieval",
     model="gemini-2.0-flash"
-    )
+)
+
+# FIXED DEBUG LOGIC: Handles both function-based tools and MCP object tools
+tool_names = []
+for t in root_agent.tools:
+    if hasattr(t, 'name'):
+        tool_names.append(t.name)
+    elif hasattr(t, '__name__'):
+        tool_names.append(t.__name__)
+    else:
+        tool_names.append(str(t))
+
+print(f"DEBUG: Agent has access to tools: {tool_names}")
 
 session_service = InMemorySessionService()
 session = session_service.create_session(
@@ -83,4 +79,3 @@ session = session_service.create_session(
 )
 
 runner = Runner(agent=root_agent, app_name=APP_NAME, session_service=session_service)
-
