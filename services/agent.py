@@ -2,7 +2,7 @@ import os
 import sys
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
-from tools import CustomerDataTool, StrategyRetrievalTool
+from tools import CustomerDataTool, StrategyRetrievalTool, ImplementStrategyTool
 from common import create_retention_agent
 # Import the MCP Bridge classes
 from google.adk.tools.mcp_tool import McpToolset
@@ -36,7 +36,8 @@ os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
 
-agent_tools = [CustomerDataTool, StrategyRetrievalTool]
+# Register all tools the agent may call, including implementation tool
+agent_tools = [CustomerDataTool, StrategyRetrievalTool, ImplementStrategyTool]
 
 # Create a dynamic instruction set
 final_instructions = instructionsForAgent
