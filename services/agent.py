@@ -13,8 +13,6 @@ from agent_prompt import instructionsForAgent
 import warnings
 import logging
 
-# CHANGE: Import FF_MCP_ENABLED from config.py instead of using os.getenv
-from config import FF_MCP_ENABLED
 
 warnings.filterwarnings("ignore")
 logging.basicConfig(level=logging.ERROR)
@@ -23,7 +21,16 @@ SESSION_ID = "sesson-223222"
 USER_ID = "Lalit1122"
 APP_NAME = "Retention_Agent"
 
-load_dotenv()
+# Load .env from customer-mcp-server
+env_path = os.path.join(os.path.dirname(__file__), '..', '..', 'customer-mcp-server', '.env')
+load_dotenv(dotenv_path=env_path)
+
+# Import FF_MCP_ENABLED from .env file
+ff_mcp_value = os.getenv("FF_MCP_ENABLED", "False").strip()
+FF_MCP_ENABLED = ff_mcp_value.lower() in ['true', '1', 'yes'] if ff_mcp_value else False
+
+print(f"FF_MCP_ENABLED value: {FF_MCP_ENABLED}")
+
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
