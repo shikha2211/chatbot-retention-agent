@@ -1,0 +1,14 @@
+.venv
+__pycache__
+*.pyc
+.git
+Dockerfile
+Jenkinsfile
+README.md
+helm
+charts
+scripts
+assets
+zilliz-rag
+*.log
+.env

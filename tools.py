@@ -9,7 +9,8 @@ from models import CustomerProfile
 from services.query_zilliz_milvus_service import query_zilliz_milvus_service
 
 load_dotenv()  # Load environment variables
-
+print("GOOGLE_API_KEY in tools.py:", os.getenv("GOOGLE_API_KEY"))
+print("OPENAI_API_KEY in tools.py:", os.getenv("OPENAI_API_KEY"))
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 CUSTOMER_API_URL = os.getenv('CUSTOMER_API_URL')
 RAG_API_URL = os.getenv('RAG_API_URL')
