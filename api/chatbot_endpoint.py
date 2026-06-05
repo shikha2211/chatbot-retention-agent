@@ -110,6 +110,7 @@ async def chat_with_agent(request: ChatRequest):
 
         # Run the ADK agent asynchronously
         response_text = ""
+        status = "success"
         try:
             async for event in runner.run_async(
                 user_id=user_id, 
@@ -118,7 +119,7 @@ async def chat_with_agent(request: ChatRequest):
             ):
                 print(f"DEBUG Event: {event}")
                 # Check if the event has content and parts
-                if hasattr(event, "content") and event.content.parts:
+                if hasattr(event, "content") and event.content and getattr(event.content, "parts", None):
                     for part in event.content.parts:
                         # 1. Capture direct text
                         if hasattr(part, "text") and part.text:
@@ -134,14 +135,17 @@ async def chat_with_agent(request: ChatRequest):
         except Exception as e:
             logging.error(f"ADK Async Runner Error: {e}")
             response_text = f"An error occurred: {str(e)}"
+            status = "error"
 
         if not response_text:
             response_text = "I received your message but couldn't generate a response."
+            status = "warning"
 
         return ChatResponse(
             response=response_text,
             session_id=session_id,
             customer_id=request.customer_id,
+            status=status,
         )
 
     except Exception as e:
