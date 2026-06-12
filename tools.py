@@ -9,8 +9,18 @@ from models import CustomerProfile
 from services.query_zilliz_milvus_service import query_zilliz_milvus_service
 
 load_dotenv()  # Load environment variables
-print("GOOGLE_API_KEY in tools.py:", os.getenv("GOOGLE_API_KEY"))
-print("OPENAI_API_KEY in tools.py:", os.getenv("OPENAI_API_KEY"))
+
+# Mask API keys in logs to avoid leaking secrets in logs
+def _mask_key(k: str | None) -> str:
+        if not k:
+                return "<missing>"
+        k = str(k)
+        if len(k) <= 10:
+                return k[0:2] + "..." + k[-2:]
+        return k[:6] + "..." + k[-4:]
+
+print("GOOGLE_API_KEY in tools.py:", _mask_key(os.getenv("GOOGLE_API_KEY")))
+print("OPENAI_API_KEY in tools.py:", _mask_key(os.getenv("OPENAI_API_KEY")))
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 CUSTOMER_API_URL = os.getenv('CUSTOMER_API_URL')
 RAG_API_URL = os.getenv('RAG_API_URL')
