@@ -23,13 +23,24 @@ def main():
     port = int(os.getenv("PORT", "9000"))  # Changed to 9000
     reload = os.getenv("RELOAD", "true").lower() == "true"
     
+    def _mask_val(v: str | None) -> str:
+        if not v:
+            return "None"
+        try:
+            s = str(v)
+            if len(s) <= 12:
+                return s[0:3] + "..."
+            return s[0:6] + "..." + s[-4:]
+        except Exception:
+            return "<masked>"
+
     print(f"\n==>Starting Customer Retention Agent API server...")
     print(f"\n==>Host: {host}")
     print(f"\n==>Port: {port}")
     print(f"\n==>Reload: {reload}")
-    print(f"\n==>MONGO_URI: {os.getenv('MONGO_URI')}")
-    print(f"\n==>CUSTOMER_API_URL: {os.getenv('CUSTOMER_API_URL')}")
-    print(f"\n==>MILVUS_URI: {os.getenv('MILVUS_URI')}")
+    print(f"\n==>MONGO_URI: {_mask_val(os.getenv('MONGO_URI'))}")
+    print(f"\n==>CUSTOMER_API_URL: {_mask_val(os.getenv('CUSTOMER_API_URL'))}")
+    print(f"\n==>MILVUS_URI: {_mask_val(os.getenv('MILVUS_URI'))}")
     
     print(f"\n==>API Documentation: http://{host}:{port}/docs")
     print(f"\n==>Chat Endpoint: http://{host}:{port}/api/chat")

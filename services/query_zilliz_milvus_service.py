@@ -63,7 +63,18 @@ def query_zilliz_milvus_service(customer: dict):
     search_params = {"metric_type": "L2", "params": {"level": 2}}
     limit = 5
 
-    print(f"Querying Milvus at {uri} for similar retention strategies...\n")
+    def _mask_val(v: str | None) -> str:
+        if not v:
+            return "None"
+        try:
+            s = str(v)
+            if len(s) <= 12:
+                return s[0:3] + "..."
+            return s[0:6] + "..." + s[-4:]
+        except Exception:
+            return "<masked>"
+
+    print(f"Querying Milvus at {_mask_val(uri)} for similar retention strategies...\n")
     results = client.search(
         collection_name,
         data=[query_vector],
