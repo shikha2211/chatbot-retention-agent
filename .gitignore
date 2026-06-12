@@ -32,3 +32,5 @@ yarn-error.log*
 __pycache__
 */__pycache__
 **/*.pyc
+# local env files
+*.env
