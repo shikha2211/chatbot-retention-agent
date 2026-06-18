@@ -1,4 +1,5 @@
 import uvicorn
+import json
 import os
 import sys
 from google.adk.runners import Runner
@@ -35,6 +36,16 @@ os.environ["vertexai"] = "True"  # ADK framework looks for this specific lowerca
 os.environ["project"] = os.environ.get("GOOGLE_CLOUD_PROJECT", "snappy-mark-499214-f0")
 os.environ["location"] = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
 # ----------------------------------------------------------------------------------
+
+# FIX: Parse the raw Vercel JSON text string if a local file path isn't being used
+credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+if credentials_json and not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+    try:
+        # This converts the string back into a structural format the Google SDK expects
+        parsed_creds = json.loads(credentials_json)
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS_INFO"] = json.dumps(parsed_creds)
+    except Exception as e:
+        print(f"⚠️ Error parsing credentials JSON string: {e}")
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.5-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
