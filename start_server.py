@@ -39,13 +39,28 @@ os.environ["location"] = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
 
 # FIX: Parse the raw Vercel JSON text string if a local file path isn't being used
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
-if credentials_json and not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+if credentials_json:
     try:
-        # This converts the string back into a structural format the Google SDK expects
+        # Create a temporary file path that stays accessible during runtime
+        temp_dir = tempfile.gettempdir()
+        temp_cred_path = os.path.join(temp_dir, "gcp_service_account_token.json")
+        
+        # Load and cleanly format the string structure
         parsed_creds = json.loads(credentials_json)
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS_INFO"] = json.dumps(parsed_creds)
+        
+        with open(temp_cred_path, "w") as f:
+            json.dump(parsed_creds, f)
+            
+        # Point the Google Core SDK directly to the physical file on disk
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = temp_cred_path
+        print(f"✅ Production ADC File written successfully to: {temp_cred_path}")
+        
     except Exception as e:
-        print(f"⚠️ Error parsing credentials JSON string: {e}")
+        print(f"⚠️ Production Credentials Parsing Error: {e}")
+else:
+    # Local Development fallback tracking
+    if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+        print("⚠️ WARNING: No Google credentials variables detected.")
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.5-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
