@@ -1,6 +1,4 @@
 import uvicorn
-import json
-import tempfile
 import os
 import sys
 from google.adk.runners import Runner
@@ -31,37 +29,15 @@ load_dotenv(dotenv_path=env_path)
 ff_mcp_value = os.getenv("FF_MCP_ENABLED", "False").strip()
 FF_MCP_ENABLED = ff_mcp_value.lower() in ['true', '1', 'yes'] if ff_mcp_value else False
 
-# --- FIX START: Configure global environments for ADK / Google SDK requirements ---
+# 2. Force Vertex AI parameters into local memory for development
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "True"
-os.environ["vertexai"] = "True"  # ADK framework looks for this specific lowercase parameter
+os.environ["vertexai"] = "True"
 os.environ["project"] = os.environ.get("GOOGLE_CLOUD_PROJECT", "snappy-mark-499214-f0")
 os.environ["location"] = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
-# ----------------------------------------------------------------------------------
 
-# FIX: Parse the raw Vercel JSON text string if a local file path isn't being used
-credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
-if credentials_json:
-    try:
-        # Create a temporary file path that stays accessible during runtime
-        temp_dir = tempfile.gettempdir()
-        temp_cred_path = os.path.join(temp_dir, "gcp_service_account_token.json")
-        
-        # Load and cleanly format the string structure
-        parsed_creds = json.loads(credentials_json)
-        
-        with open(temp_cred_path, "w") as f:
-            json.dump(parsed_creds, f)
-            
-        # Point the Google Core SDK directly to the physical file on disk
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = temp_cred_path
-        print(f"✅ Production ADC File written successfully to: {temp_cred_path}")
-        
-    except Exception as e:
-        print(f"⚠️ Production Credentials Parsing Error: {e}")
-else:
-    # Local Development fallback tracking
-    if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
-        print("⚠️ WARNING: No Google credentials variables detected.")
+# 3. Explicitly point to your local service account file if it exists
+if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./service-account-key.json"  # Adjust this path to your local service account key file
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.5-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH

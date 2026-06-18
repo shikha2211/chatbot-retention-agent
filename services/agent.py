@@ -46,14 +46,15 @@ final_instructions = instructionsForAgent
 # 3. Conditionally add the MCP Toolset
 if FF_MCP_ENABLED:
     print("MCP Mode: Enabled. Connecting to customer_mcp_server...", file=sys.stderr)
-    
+    mcp_url = os.getenv("MCP_SERVER_URL")
+    print(f"DEBUG: MCP_SERVER_URL from .env: {mcp_url}", file=sys.stderr)
     final_instructions += (
         "\n\nIMPORTANT: You have access to specialized MCP (Model Context Protocol) tools. "
         "Always prefer using 'customer_data_by_id', 'customer_data_text', or 'system_health_status' "
         "over any other similar tools when FF_MCP_ENABLED is true."
     )
     mcp_connection = SseConnectionParams(
-        url="http://localhost:8000/sse"  # The SSE endpoint of your MCP server
+        url=mcp_url  # The SSE endpoint of your MCP server
     )
     # Wrap the connection in a toolset and add to the list
     mcp_toolset = McpToolset(connection_params=mcp_connection)
