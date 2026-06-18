@@ -29,11 +29,12 @@ load_dotenv(dotenv_path=env_path)
 ff_mcp_value = os.getenv("FF_MCP_ENABLED", "False").strip()
 FF_MCP_ENABLED = ff_mcp_value.lower() in ['true', '1', 'yes'] if ff_mcp_value else False
 
-print(f"FF_MCP_ENABLED value: {FF_MCP_ENABLED}")
+print(f"FF_MCP_ENABLED: {FF_MCP_ENABLED}")
+# CHANGE: Inform the underlying Google SDK to route traffic through Vertex AI
+os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "True"
 
-os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
+MODEL_GEMINI_2_0_FLASH = "gemini-2.5-flash"
 
-MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
 
 # Register all tools the agent may call, including implementation tool
@@ -62,11 +63,12 @@ else:
     print("Local Mode: MCP tools are disabled.", file=sys.stderr)
 
 # 4. Initialize the Agent with the dynamic tool list
+# CHANGE: Pass explicit fallback parameters targeting Vertex AI execution rules
 root_agent = create_retention_agent(
     tools=agent_tools,
     instruction=final_instructions,
     description="This agent invokes MCP tools for customer data and strategy retrieval",
-    model="gemini-2.0-flash"
+    model=AGENT_MODEL,
 )
 
 # FIXED DEBUG LOGIC: Handles both function-based tools and MCP object tools

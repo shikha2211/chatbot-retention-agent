@@ -9,17 +9,13 @@ import os
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Import ADK components
+# Import ADK components cleanly
 try:
     from services.agent import runner, session_service
     from google.genai import types
-
     ADK_AVAILABLE = True
 except ImportError as e:
-    logging.warning(f"ADK agent not available: {e}")
-    runner = None
-    session_service = None
-    types = None
+    logging.critical(f"Critical System Failure initializing components: {e}")
     ADK_AVAILABLE = False
 
 router = APIRouter()

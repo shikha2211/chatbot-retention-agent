@@ -34,3 +34,7 @@ __pycache__
 **/*.pyc
 # local env files
 *.env
+.vercel
+.env*
+# Ignore local Google Cloud credentials
+service-account-key.json

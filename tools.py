@@ -1,7 +1,7 @@
 # tools.py (apps/llm/src/app/adk/tools.py)
 import requests
 import os
-from openai import OpenAI
+from openai import OpenAI, api_key
 from dotenv import load_dotenv  # Import load_dotenv
 from typing import Any, Dict
 from google.adk.tools import google_search
@@ -10,18 +10,14 @@ from services.query_zilliz_milvus_service import query_zilliz_milvus_service
 
 load_dotenv()  # Load environment variables
 
-# Mask API keys in logs to avoid leaking secrets in logs
-def _mask_key(k: str | None) -> str:
-        if not k:
-                return "<missing>"
-        k = str(k)
-        if len(k) <= 10:
-                return k[0:2] + "..." + k[-2:]
-        return k[:6] + "..." + k[-4:]
+# Extract the key safely into a standalone variable
+openai_key_string = os.getenv("OPENAI_API_KEY")
 
-print("GOOGLE_API_KEY in tools.py:", _mask_key(os.getenv("GOOGLE_API_KEY")))
-print("OPENAI_API_KEY in tools.py:", _mask_key(os.getenv("OPENAI_API_KEY")))
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Pass it to your client constructor
+client = OpenAI(api_key=openai_key_string)
+
+print("OPENAI_API_KEY in tools.py present:", bool(openai_key_string))
+
 CUSTOMER_API_URL = os.getenv('CUSTOMER_API_URL')
 RAG_API_URL = os.getenv('RAG_API_URL')
 IMPLEMENTATION_AGENT_URL = os.getenv('IMPLEMENTATION_AGENT_URL', '').rstrip('/')

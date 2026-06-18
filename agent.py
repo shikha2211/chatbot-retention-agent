@@ -24,7 +24,7 @@ load_dotenv()  # Load environment variables
 
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
-MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
+MODEL_GEMINI_2_0_FLASH = "gemini-2.5-flash"
 AGENT_MODEL = MODEL_GEMINI_2_0_FLASH
 
 root_agent = create_retention_agent(
