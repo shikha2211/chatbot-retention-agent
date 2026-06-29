@@ -11,19 +11,20 @@ def load_config():
     # Prefer environment variables if present
     uri = os.getenv('MILVUS_URI')
     token = os.getenv('MILVUS_TOKEN')
-    if uri and token:
-        return uri, token
+    if not uri or not token:
+        raise RuntimeError("MILVUS_URI and MILVUS_TOKEN must be set")
+    
+    print(f"\nConnecting to DB: {uri} with token: {token}")
+    # # Fall back to api/config.ini relative to this package root
+    # service_dir = os.path.dirname(__file__)
+    # root_dir = os.path.dirname(service_dir)
+    # cfg_path = os.path.join(root_dir, 'services', 'config.ini')
 
-    # Fall back to api/config.ini relative to this package root
-    service_dir = os.path.dirname(__file__)
-    root_dir = os.path.dirname(service_dir)
-    cfg_path = os.path.join(root_dir, 'services', 'config.ini')
-
-    cfp = configparser.RawConfigParser()
-    cfp.read(cfg_path)
-    uri = cfp.get('example', 'uri')
-    token = cfp.get('example', 'token')
-    return uri, token
+    # cfp = configparser.RawConfigParser()
+    # cfp.read(cfg_path)
+    # uri = cfp.get('example', 'uri')
+    # token = cfp.get('example', 'token')
+    # return uri, token
 
 
 def load_customer_record(path: str) -> dict:

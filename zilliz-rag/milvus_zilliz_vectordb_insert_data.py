@@ -1,15 +1,14 @@
 import configparser
 import json
+import os
 import time
 import random
 
 from pymilvus import MilvusClient
 from pymilvus import DataType
 
-cfp = configparser.RawConfigParser()
-cfp.read('config.ini')
-milvus_uri = cfp.get('example', 'uri')
-token = cfp.get('example', 'token')
+milvus_uri = os.getenv('MILVUS_URI')
+token = os.getenv('MILVUS_TOKEN')
 
 print(f"\nConnecting to DB: {milvus_uri} with token: {token}")
 
